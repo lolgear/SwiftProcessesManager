@@ -26,5 +26,10 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>org.opensource.SwiftProcessesManagerLaunchAgent</key>
+		<string>identifier &quot;org.opensource.SwiftProcessesManagerLaunchAgent&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Apple Development: gaussblurinc@gmail.com (XM5F53699F)&quot; and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+	</dict>
 </dict>
 </plist>

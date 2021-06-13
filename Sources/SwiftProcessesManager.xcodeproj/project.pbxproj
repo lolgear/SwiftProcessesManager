@@ -33,17 +33,29 @@
 		0A983A7E2675159900251912 /* ProcessGathererUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983A7A26750D0B00251912 /* ProcessGathererUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A983A7F2675159C00251912 /* ProcessGathererUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A7B26750D0B00251912 /* ProcessGathererUtility.m */; };
 		0A983A8D2675191C00251912 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A8C2675191C00251912 /* main.m */; };
-		0A983A912675191C00251912 /* SwiftProcessesManagerXPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 0A983A862675191C00251912 /* SwiftProcessesManagerXPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A983A97267519AE00251912 /* CommunicationProtocolSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */; };
 		0A983A99267526B900251912 /* ProcessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983A98267526B900251912 /* ProcessTableViewCell.xib */; };
-		0A983AA3267542B700251912 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983AA2267542B700251912 /* main.m */; };
-		0A983AA72675430B00251912 /* CommunicationProtocolSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */; };
 		0A983AB026754C0700251912 /* SwiftProcessesManagerPreferencePane.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983AAF26754C0700251912 /* SwiftProcessesManagerPreferencePane.h */; };
 		0A983AB226754C0700251912 /* SwiftProcessesManagerPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983AB126754C0700251912 /* SwiftProcessesManagerPreferencePane.m */; };
 		0A983AB426754C0700251912 /* SwiftProcessesManagerPreferencePane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AB326754C0700251912 /* SwiftProcessesManagerPreferencePane.tiff */; };
 		0A983AB726754C0700251912 /* SwiftProcessesManagerPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AB526754C0700251912 /* SwiftProcessesManagerPreferencePane.xib */; };
 		0A983ABF26755C5300251912 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A983ABE26755C5300251912 /* Media.xcassets */; };
 		0A983AC12675F71D00251912 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AC02675F71D00251912 /* InfoPlist.strings */; };
+		0A983AC426766E0300251912 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983AC326766E0300251912 /* main.swift */; };
+		0A983ACB2676738E00251912 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983ACA2676738E00251912 /* AuthorizationService.swift */; };
+		0A983ACD2676768B00251912 /* org.opensource.SwiftProcessesManagerLaunchAgent in Embed LaunchAgents */ = {isa = PBXBuildFile; fileRef = 0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0A983ADA2676874E00251912 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A682674EBC200251912 /* Process.swift */; };
+		0A983ADB2676874E00251912 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A662674EAB100251912 /* Protocols.swift */; };
+		0A983ADC2676874E00251912 /* ProcessHitman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6A2674EC6100251912 /* ProcessHitman.swift */; };
+		0A983ADD2676874E00251912 /* ProcessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6C2674EC6F00251912 /* ProcessService.swift */; };
+		0A983ADE2676874E00251912 /* CommunicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A762674FAB500251912 /* CommunicationProtocol.swift */; };
+		0A983ADF2676874E00251912 /* RemoteProxyHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A782674FCBC00251912 /* RemoteProxyHolder.swift */; };
+		0A983AE02676874E00251912 /* ProcessMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A722674F85600251912 /* ProcessMonitor.swift */; };
+		0A983AE12676874E00251912 /* ConnectionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6E2674ED2400251912 /* ConnectionPolicy.swift */; };
+		0A983AE22676874E00251912 /* ProcessGatherer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A702674F42500251912 /* ProcessGatherer.swift */; };
+		0A983AE32676875700251912 /* ProcessGathererUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A7B26750D0B00251912 /* ProcessGathererUtility.m */; };
+		0A983AEC2676891700251912 /* BridgingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983AEB2676891700251912 /* BridgingHeader.h */; };
+		0A983AFB26768C1300251912 /* ProcessGathererUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983AFA26768C1300251912 /* ProcessGathererUtility.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +72,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0A983A852675191C00251912;
 			remoteInfo = SwiftProcessesManagerXPCService;
+		};
+		0A983ACE2676769700251912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A983A182674D0F200251912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A983A9F267542B700251912;
+			remoteInfo = SwiftProcessesManagerLaunchAgent;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -81,7 +100,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
 			dstSubfolderSpec = 16;
 			files = (
-				0A983A912675191C00251912 /* SwiftProcessesManagerXPCService.xpc in Embed XPC Services */,
 			);
 			name = "Embed XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +112,27 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0A983AC9267670BB00251912 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A983ACC2676765000251912 /* Embed LaunchAgents */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				0A983ACD2676768B00251912 /* org.opensource.SwiftProcessesManagerLaunchAgent in Embed LaunchAgents */,
+			);
+			name = "Embed LaunchAgents";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -130,7 +169,7 @@
 		0A983A8C2675191C00251912 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A983A8E2675191C00251912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A983A98267526B900251912 /* ProcessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProcessTableViewCell.xib; sourceTree = "<group>"; };
-		0A983AA0267542B700251912 /* SwiftProcessesManagerLaunchAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftProcessesManagerLaunchAgent; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = org.opensource.SwiftProcessesManagerLaunchAgent; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A983AA2267542B700251912 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A983AAD26754C0700251912 /* SwiftProcessesManagerPreferencePane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProcessesManagerPreferencePane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A983AAF26754C0700251912 /* SwiftProcessesManagerPreferencePane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftProcessesManagerPreferencePane.h; sourceTree = "<group>"; };
@@ -140,6 +179,12 @@
 		0A983AB826754C0700251912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A983ABE26755C5300251912 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		0A983AC02675F71D00251912 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		0A983AC326766E0300251912 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../../../../Documents/main.swift; sourceTree = "<group>"; };
+		0A983AC52676707300251912 /* Helper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Info.plist"; sourceTree = "<group>"; };
+		0A983AC62676707300251912 /* Helper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Launchd.plist"; sourceTree = "<group>"; };
+		0A983ACA2676738E00251912 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizationService.swift; path = ../../../../../Documents/AuthorizationService.swift; sourceTree = "<group>"; };
+		0A983AEB2676891700251912 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		0A983AFA26768C1300251912 /* ProcessGathererUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessGathererUtility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +215,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A983AA72675430B00251912 /* CommunicationProtocolSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +247,7 @@
 				0A983A202674D0F200251912 /* SwiftProcessesManager.app */,
 				0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */,
 				0A983A862675191C00251912 /* SwiftProcessesManagerXPCService.xpc */,
-				0A983AA0267542B700251912 /* SwiftProcessesManagerLaunchAgent */,
+				0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */,
 				0A983AAD26754C0700251912 /* SwiftProcessesManagerPreferencePane.prefPane */,
 			);
 			name = Products;
@@ -226,6 +270,7 @@
 				0A983A2D2674D0F300251912 /* SwiftProcessesManager.entitlements */,
 				0A983A252674D0F200251912 /* ViewController.swift */,
 				0A983A98267526B900251912 /* ProcessTableViewCell.xib */,
+				0A983ACA2676738E00251912 /* AuthorizationService.swift */,
 			);
 			path = SwiftProcessesManager;
 			sourceTree = "<group>";
@@ -269,7 +314,12 @@
 		0A983AA1267542B700251912 /* SwiftProcessesManagerLaunchAgent */ = {
 			isa = PBXGroup;
 			children = (
+				0A983AFA26768C1300251912 /* ProcessGathererUtility.h */,
+				0A983AEB2676891700251912 /* BridgingHeader.h */,
 				0A983AA2267542B700251912 /* main.m */,
+				0A983AC326766E0300251912 /* main.swift */,
+				0A983AC52676707300251912 /* Helper-Info.plist */,
+				0A983AC62676707300251912 /* Helper-Launchd.plist */,
 			);
 			path = SwiftProcessesManagerLaunchAgent;
 			sourceTree = "<group>";
@@ -308,6 +358,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A983AE62676886000251912 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A983AEC2676891700251912 /* BridgingHeader.h in Headers */,
+				0A983AFB26768C1300251912 /* ProcessGathererUtility.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -320,10 +379,12 @@
 				0A983A1E2674D0F200251912 /* Resources */,
 				0A983A542674EA5600251912 /* Embed Frameworks */,
 				0A983A952675191C00251912 /* Embed XPC Services */,
+				0A983ACC2676765000251912 /* Embed LaunchAgents */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A983ACF2676769700251912 /* PBXTargetDependency */,
 				0A983A602674EAA200251912 /* PBXTargetDependency */,
 				0A983A902675191C00251912 /* PBXTargetDependency */,
 			);
@@ -371,9 +432,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A983AA4267542B700251912 /* Build configuration list for PBXNativeTarget "SwiftProcessesManagerLaunchAgent" */;
 			buildPhases = (
+				0A983AE62676886000251912 /* Headers */,
 				0A983A9C267542B700251912 /* Sources */,
 				0A983A9D267542B700251912 /* Frameworks */,
 				0A983A9E267542B700251912 /* CopyFiles */,
+				0A983AC9267670BB00251912 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,7 +444,7 @@
 			);
 			name = SwiftProcessesManagerLaunchAgent;
 			productName = SwiftProcessesManagerLaunchAgent;
-			productReference = 0A983AA0267542B700251912 /* SwiftProcessesManagerLaunchAgent */;
+			productReference = 0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */;
 			productType = "com.apple.product-type.tool";
 		};
 		0A983AAC26754C0700251912 /* SwiftProcessesManagerPreferencePane */ = {
@@ -423,6 +486,7 @@
 					};
 					0A983A9F267542B700251912 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					0A983AAC26754C0700251912 = {
 						CreatedOnToolsVersion = 12.5;
@@ -503,6 +567,7 @@
 				0A983A362674D24B00251912 /* ProcessesViewController.swift in Sources */,
 				0A983A242674D0F200251912 /* AppDelegate.swift in Sources */,
 				0A983A3C2674D61E00251912 /* ProcessesViewController+ViewModel.swift in Sources */,
+				0A983ACB2676738E00251912 /* AuthorizationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +600,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A983AA3267542B700251912 /* main.m in Sources */,
+				0A983ADB2676874E00251912 /* Protocols.swift in Sources */,
+				0A983AE32676875700251912 /* ProcessGathererUtility.m in Sources */,
+				0A983ADD2676874E00251912 /* ProcessService.swift in Sources */,
+				0A983ADF2676874E00251912 /* RemoteProxyHolder.swift in Sources */,
+				0A983AE22676874E00251912 /* ProcessGatherer.swift in Sources */,
+				0A983ADE2676874E00251912 /* CommunicationProtocol.swift in Sources */,
+				0A983AC426766E0300251912 /* main.swift in Sources */,
+				0A983ADC2676874E00251912 /* ProcessHitman.swift in Sources */,
+				0A983AE02676874E00251912 /* ProcessMonitor.swift in Sources */,
+				0A983AE12676874E00251912 /* ConnectionPolicy.swift in Sources */,
+				0A983ADA2676874E00251912 /* Process.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +634,11 @@
 			isa = PBXTargetDependency;
 			target = 0A983A852675191C00251912 /* SwiftProcessesManagerXPCService */;
 			targetProxy = 0A983A8F2675191C00251912 /* PBXContainerItemProxy */;
+		};
+		0A983ACF2676769700251912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A983A9F267542B700251912 /* SwiftProcessesManagerLaunchAgent */;
+			targetProxy = 0A983ACE2676769700251912 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -758,7 +838,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.CommunicationProtocolSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -788,7 +867,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.CommunicationProtocolSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -805,7 +883,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 942QBE43P5;
 				INFOPLIST_FILE = SwiftProcessesManagerXPCService/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -819,7 +896,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 942QBE43P5;
 				INFOPLIST_FILE = SwiftProcessesManagerXPCService/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -829,18 +905,55 @@
 		0A983AA5267542B700251912 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/SwiftProcessesManagerLaunchAgent/Helper-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/SwiftProcessesManagerLaunchAgent/Helper-Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerLaunchAgent;
+				PRODUCT_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftProcessesManagerLaunchAgent/BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		0A983AA6267542B700251912 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"$(SRCROOT)/SwiftProcessesManagerLaunchAgent/Helper-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"$(SRCROOT)/SwiftProcessesManagerLaunchAgent/Helper-Launchd.plist\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerLaunchAgent;
+				PRODUCT_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftProcessesManagerLaunchAgent/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -851,7 +964,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftProcessesManagerPreferencePane/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerPreferencePane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = prefPane;
@@ -865,7 +978,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftProcessesManagerPreferencePane/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerPreferencePane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = prefPane;

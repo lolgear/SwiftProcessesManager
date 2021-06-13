@@ -35,8 +35,16 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        // Create the delegate for the service.
+        ServiceDelegate *delegate = [ServiceDelegate new];
+        
+        // Set up the one NSXPCListener for this service. It will handle all incoming connections.
+        NSXPCListener *listener = [[NSXPCListener alloc] initWithMachServiceName:];
+        listener.delegate = delegate;
+        
+        // Resuming the serviceListener starts this service. This method does not return.
+        [listener resume];
+        [[NSRunLoop currentRunLoop] run];
     }
     return 0;
 }
