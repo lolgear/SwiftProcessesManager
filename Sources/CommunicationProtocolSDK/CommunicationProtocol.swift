@@ -7,7 +7,11 @@
 
 import Foundation
 public enum CommunicationProtocol {
-    public enum ServiceName {
+    public enum EmbeddedXPC {
         public static let name: String = "org.opensource.SwiftProcessesManagerXPCService"
     }
+    public enum LaunchAgent {
+        public static let name: String = "org.opensource.SwiftProcessesManagerLaunchAgent"
+    }
 }
+
