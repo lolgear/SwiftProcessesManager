@@ -696,6 +696,10 @@
                                     <size key="minSize" width="26" height="25"/>
                                     <size key="maxSize" width="26" height="25"/>
                                 </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="7E015A02-5B6F-4F04-BCC3-5348984614D3" label="Reconnect" paletteLabel="Reconnect" tag="-1" image="phone.connection" catalog="system" bordered="YES" id="Ozs-fB-0xb" userLabel="Reconnect">
+                                    <size key="minSize" width="29" height="25"/>
+                                    <size key="maxSize" width="29" height="25"/>
+                                </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="qCW-OY-WuL"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="WHf-SP-Yf4"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="wwz-BO-KCr"/>
@@ -704,6 +708,7 @@
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="h4U-gK-XSG"/>
+                                <toolbarItem reference="Ozs-fB-0xb"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -747,6 +752,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="phone.connection" catalog="system" width="17" height="16"/>
         <image name="xmark" catalog="system" width="14" height="13"/>
     </resources>
 </document>

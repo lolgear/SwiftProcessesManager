@@ -7,6 +7,7 @@
 
 import AppKit
 import Combine
+import CommunicationProtocolSDK
 
 class ProcessesViewController: NSViewController {
     // MARK: - Outlets
@@ -51,6 +52,9 @@ class ProcessesViewController: NSViewController {
         let killButton = self.view.window?.toolbar?.items.first
         killButton?.target = self
         killButton?.action = #selector(Self.killButtonClicked(sender:))
+        let reconnectButton = self.view.window?.toolbar?.items[1]
+        reconnectButton?.target = self
+        reconnectButton?.action = #selector(Self.reconnectButtonClicked(sender:))
     }
     
     // MARK: - Layout
@@ -74,8 +78,12 @@ class ProcessesViewController: NSViewController {
         self.subscription = self.model.didReceiveUpdatesPublisher.receive(on: DispatchQueue.main).sink { [weak self] _ in
             self?.reload()
         }
-        self.model.configureConnection()
-        self.model.askUpdates()
+        let result = AuthorizationService.authorize(label: CommunicationProtocol.LaunchAgent.name)
+        
+        if result {
+            self.model.configureConnection()
+            self.model.askUpdates()
+        }
     }
     
     // MARK: - Reload
@@ -94,6 +102,10 @@ extension ProcessesViewController {
         if indexPaths.count == 1, let item = indexPaths.first {
             self.model.shouldAbortProcess(at: item)
         }
+    }
+    @IBAction func reconnectButtonClicked(sender: NSToolbarItem) {
+        self.model.configureConnection()
+        self.model.askUpdates()
     }
 }
 
