@@ -21,13 +21,12 @@ class ServiceConnector {
 extension ServiceConnector {
     func start() {
         self.stop()
-        let connection: NSXPCConnection = .init(serviceName: CommunicationProtocol.ServiceName.name)
+        let connection: NSXPCConnection = .init(machServiceName: CommunicationProtocol.LaunchAgent.name, options: .privileged)
         connection.remoteObjectInterface = .init(with: ProcessServiceProtocol.self)
         connection.resume()
         self.service = .init(value: connection, sync: false)
     }
     func stop() {
-        self.service?.value.suspend()
         self.service?.value.invalidate()
         self.service = nil
     }
