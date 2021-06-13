@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwiftProcessesManager
+
+  Created by Dmitry Lobanov on 13.06.2021.
+  
+*/
+
+"NSPrefPaneIconLabel" = "Processes
+Manager";
