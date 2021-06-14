@@ -41,7 +41,6 @@
 		0A983AB726754C0700251912 /* SwiftProcessesManagerPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AB526754C0700251912 /* SwiftProcessesManagerPreferencePane.xib */; };
 		0A983ABF26755C5300251912 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A983ABE26755C5300251912 /* Media.xcassets */; };
 		0A983AC12675F71D00251912 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AC02675F71D00251912 /* InfoPlist.strings */; };
-		0A983ACB2676738E00251912 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983ACA2676738E00251912 /* AuthorizationService.swift */; };
 		0A983ACD2676768B00251912 /* org.opensource.SwiftProcessesManagerLaunchAgent in Embed LaunchAgents */ = {isa = PBXBuildFile; fileRef = 0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0A983ADA2676874E00251912 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A682674EBC200251912 /* Process.swift */; };
 		0A983ADB2676874E00251912 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A662674EAB100251912 /* Protocols.swift */; };
@@ -56,7 +55,8 @@
 		0A983AEC2676891700251912 /* BridgingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983AEB2676891700251912 /* BridgingHeader.h */; };
 		0A983AFB26768C1300251912 /* ProcessGathererUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983AFA26768C1300251912 /* ProcessGathererUtility.h */; };
 		0A983AFF26769BD900251912 /* NewAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983AFE26769BD900251912 /* NewAuthorizationService.m */; };
-		0A983B022676AAA300251912 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983AC326766E0300251912 /* main.swift */; };
+		0A983B04267742BD00251912 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B03267742BD00251912 /* main.swift */; };
+		0A983B06267742F600251912 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B05267742F600251912 /* AuthorizationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,15 +179,15 @@
 		0A983AB826754C0700251912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A983ABE26755C5300251912 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		0A983AC02675F71D00251912 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
-		0A983AC326766E0300251912 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../../../../Documents/main.swift; sourceTree = "<group>"; };
 		0A983AC52676707300251912 /* Helper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Info.plist"; sourceTree = "<group>"; };
 		0A983AC62676707300251912 /* Helper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Launchd.plist"; sourceTree = "<group>"; };
-		0A983ACA2676738E00251912 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizationService.swift; path = ../../../../../Documents/AuthorizationService.swift; sourceTree = "<group>"; };
 		0A983AEB2676891700251912 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		0A983AFA26768C1300251912 /* ProcessGathererUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessGathererUtility.h; sourceTree = "<group>"; };
 		0A983AFC26769BD900251912 /* SwiftProcessesManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftProcessesManager-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A983AFD26769BD900251912 /* NewAuthorizationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewAuthorizationService.h; sourceTree = "<group>"; };
 		0A983AFE26769BD900251912 /* NewAuthorizationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewAuthorizationService.m; sourceTree = "<group>"; };
+		0A983B03267742BD00251912 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0A983B05267742F600251912 /* AuthorizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +259,7 @@
 		0A983A222674D0F200251912 /* SwiftProcessesManager */ = {
 			isa = PBXGroup;
 			children = (
+				0A983B05267742F600251912 /* AuthorizationService.swift */,
 				0A983A232674D0F200251912 /* AppDelegate.swift */,
 				0A983A272674D0F300251912 /* Assets.xcassets */,
 				0A983A2C2674D0F300251912 /* Info.plist */,
@@ -273,7 +274,6 @@
 				0A983A2D2674D0F300251912 /* SwiftProcessesManager.entitlements */,
 				0A983A252674D0F200251912 /* ViewController.swift */,
 				0A983A98267526B900251912 /* ProcessTableViewCell.xib */,
-				0A983ACA2676738E00251912 /* AuthorizationService.swift */,
 				0A983AFD26769BD900251912 /* NewAuthorizationService.h */,
 				0A983AFE26769BD900251912 /* NewAuthorizationService.m */,
 				0A983AFC26769BD900251912 /* SwiftProcessesManager-Bridging-Header.h */,
@@ -320,9 +320,9 @@
 		0A983AA1267542B700251912 /* SwiftProcessesManagerLaunchAgent */ = {
 			isa = PBXGroup;
 			children = (
+				0A983B03267742BD00251912 /* main.swift */,
 				0A983AFA26768C1300251912 /* ProcessGathererUtility.h */,
 				0A983AEB2676891700251912 /* BridgingHeader.h */,
-				0A983AC326766E0300251912 /* main.swift */,
 				0A983AC52676707300251912 /* Helper-Info.plist */,
 				0A983AC62676707300251912 /* Helper-Launchd.plist */,
 			);
@@ -566,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A983B06267742F600251912 /* AuthorizationService.swift in Sources */,
 				0A983A342674D19700251912 /* ProcessCollectionViewItem.swift in Sources */,
 				0A983A262674D0F200251912 /* ViewController.swift in Sources */,
 				0A983A752674FA7700251912 /* ServiceConnector.swift in Sources */,
@@ -574,7 +575,6 @@
 				0A983A242674D0F200251912 /* AppDelegate.swift in Sources */,
 				0A983AFF26769BD900251912 /* NewAuthorizationService.m in Sources */,
 				0A983A3C2674D61E00251912 /* ProcessesViewController+ViewModel.swift in Sources */,
-				0A983ACB2676738E00251912 /* AuthorizationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +614,7 @@
 				0A983AE22676874E00251912 /* ProcessGatherer.swift in Sources */,
 				0A983ADE2676874E00251912 /* CommunicationProtocol.swift in Sources */,
 				0A983ADC2676874E00251912 /* ProcessHitman.swift in Sources */,
-				0A983B022676AAA300251912 /* main.swift in Sources */,
+				0A983B04267742BD00251912 /* main.swift in Sources */,
 				0A983AE02676874E00251912 /* ProcessMonitor.swift in Sources */,
 				0A983AE12676874E00251912 /* ConnectionPolicy.swift in Sources */,
 				0A983ADA2676874E00251912 /* Process.swift in Sources */,

@@ -8,7 +8,13 @@
 import Foundation
 
 enum ConnectionPolicy {
-    static func check(_ connection: NSXPCConnection?) -> Result<Bool, Error> {
-        .success(true)
+    case `noPolicy`
+    case `verifyToken`
+    func check(_ connection: NSXPCConnection?) -> Result<Bool, Error> {
+        switch self {
+        case .noPolicy: return .success(true)
+        case .verifyToken:            
+            return.success(true)
+        }
     }
 }
