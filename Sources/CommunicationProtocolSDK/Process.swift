@@ -6,6 +6,7 @@
 //
 
 import Foundation
+@objc(CommunicationProtocolProcessObject)
 public class Process: NSObject, NSSecureCoding {
     private struct ObjcBridge {
         let value: Process
@@ -39,6 +40,7 @@ public class Process: NSObject, NSSecureCoding {
     }
 }
 
+@objc(CommunicationProtocolProcessListObject)
 public class ProcessList: NSObject, NSSecureCoding {
     private struct ObjcBridge {
         let value: ProcessList
