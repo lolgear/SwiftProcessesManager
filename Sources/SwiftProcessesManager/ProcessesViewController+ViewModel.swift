@@ -70,9 +70,8 @@ extension ProcessesViewController.ViewModel {
 // MARK: - Filtering
 extension ProcessesViewController.ViewModel {
     func filter(model: ProcessesModel) -> ProcessesModel {
-        
         if self.preferencesObserver.settings.shouldDisplayOnlyMyOwnProcesses {
-            return .init(model.items.filter({$0.owner == "dmitry"}))
+            return .init(model.items.filter({$0.owner == ProcessInfo.processInfo.environment["USER"]}))
         }
         else {
             return model
