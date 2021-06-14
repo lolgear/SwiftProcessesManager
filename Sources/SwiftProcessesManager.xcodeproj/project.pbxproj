@@ -70,6 +70,10 @@
 		0A983B3126776FDD00251912 /* SwiftProcessesManagerPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B2F26776FDD00251912 /* SwiftProcessesManagerPreferencePane.m */; };
 		0A983B332677718700251912 /* PreferencesObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B322677718700251912 /* PreferencesObserver.swift */; };
 		0A983B4926777E7B00251912 /* TimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B4826777E7B00251912 /* TimeObserver.swift */; };
+		0AAFD1B02677885600F53F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAFD1AF2677885600F53F8C /* AppDelegate.swift */; };
+		0AAFD1B22677885600F53F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAFD1B12677885600F53F8C /* ViewController.swift */; };
+		0AAFD1B42677885700F53F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAFD1B32677885700F53F8C /* Assets.xcassets */; };
+		0AAFD1B72677885700F53F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAFD1B52677885700F53F8C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,6 +224,13 @@
 		0A983B2F26776FDD00251912 /* SwiftProcessesManagerPreferencePane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftProcessesManagerPreferencePane.m; sourceTree = "<group>"; };
 		0A983B322677718700251912 /* PreferencesObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesObserver.swift; sourceTree = "<group>"; };
 		0A983B4826777E7B00251912 /* TimeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeObserver.swift; sourceTree = "<group>"; };
+		0AAFD1AD2677885600F53F8C /* SwiftProcessesManagerSettingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProcessesManagerSettingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAFD1AF2677885600F53F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AAFD1B12677885600F53F8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AAFD1B32677885700F53F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AAFD1B62677885700F53F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AAFD1B82677885700F53F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AAFD1B92677885700F53F8C /* SwiftProcessesManagerSettingsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftProcessesManagerSettingsApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +280,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AAFD1AA2677885600F53F8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -281,6 +299,7 @@
 				0A983AA1267542B700251912 /* SwiftProcessesManagerLaunchAgent */,
 				0A983AAE26754C0700251912 /* SwiftProcessesManagerPreferencePane */,
 				0A983B1C267762BA00251912 /* ProcessessManagerSettingsSDK */,
+				0AAFD1AE2677885600F53F8C /* SwiftProcessesManagerSettingsApp */,
 				0A983A212674D0F200251912 /* Products */,
 				0A983A96267519AE00251912 /* Frameworks */,
 			);
@@ -295,6 +314,7 @@
 				0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */,
 				0A983AAD26754C0700251912 /* SwiftProcessesManagerPreferencePane.prefPane */,
 				0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */,
+				0AAFD1AD2677885600F53F8C /* SwiftProcessesManagerSettingsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -401,6 +421,19 @@
 				0A983B27267762CC00251912 /* Settings.swift */,
 			);
 			path = ProcessessManagerSettingsSDK;
+			sourceTree = "<group>";
+		};
+		0AAFD1AE2677885600F53F8C /* SwiftProcessesManagerSettingsApp */ = {
+			isa = PBXGroup;
+			children = (
+				0AAFD1AF2677885600F53F8C /* AppDelegate.swift */,
+				0AAFD1B12677885600F53F8C /* ViewController.swift */,
+				0AAFD1B32677885700F53F8C /* Assets.xcassets */,
+				0AAFD1B52677885700F53F8C /* Main.storyboard */,
+				0AAFD1B82677885700F53F8C /* Info.plist */,
+				0AAFD1B92677885700F53F8C /* SwiftProcessesManagerSettingsApp.entitlements */,
+			);
+			path = SwiftProcessesManagerSettingsApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +592,23 @@
 			productReference = 0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0AAFD1AC2677885600F53F8C /* SwiftProcessesManagerSettingsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AAFD1BA2677885700F53F8C /* Build configuration list for PBXNativeTarget "SwiftProcessesManagerSettingsApp" */;
+			buildPhases = (
+				0AAFD1A92677885600F53F8C /* Sources */,
+				0AAFD1AA2677885600F53F8C /* Frameworks */,
+				0AAFD1AB2677885600F53F8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftProcessesManagerSettingsApp;
+			productName = SwiftProcessesManagerSettingsApp;
+			productReference = 0AAFD1AD2677885600F53F8C /* SwiftProcessesManagerSettingsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -590,6 +640,9 @@
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
 					};
+					0AAFD1AC2677885600F53F8C = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 0A983A1B2674D0F200251912 /* Build configuration list for PBXProject "SwiftProcessesManager" */;
@@ -611,6 +664,7 @@
 				0A983A9F267542B700251912 /* SwiftProcessesManagerLaunchAgent */,
 				0A983AAC26754C0700251912 /* SwiftProcessesManagerPreferencePane */,
 				0A983B1A267762BA00251912 /* ProcessessManagerSettingsSDK */,
+				0AAFD1AC2677885600F53F8C /* SwiftProcessesManagerSettingsApp */,
 			);
 		};
 /* End PBXProject section */
@@ -657,6 +711,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAFD1AB2677885600F53F8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAFD1B42677885700F53F8C /* Assets.xcassets in Resources */,
+				0AAFD1B72677885700F53F8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +807,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AAFD1A92677885600F53F8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAFD1B22677885600F53F8C /* ViewController.swift in Sources */,
+				0AAFD1B02677885600F53F8C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -784,6 +856,14 @@
 				0A983AB626754C0700251912 /* Base */,
 			);
 			name = SwiftProcessesManagerPreferencePane.xib;
+			sourceTree = "<group>";
+		};
+		0AAFD1B52677885700F53F8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AAFD1B62677885700F53F8C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1182,6 +1262,46 @@
 			};
 			name = Release;
 		};
+		0AAFD1BB2677885700F53F8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftProcessesManagerSettingsApp/SwiftProcessesManagerSettingsApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftProcessesManagerSettingsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerSettingsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0AAFD1BC2677885700F53F8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftProcessesManagerSettingsApp/SwiftProcessesManagerSettingsApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftProcessesManagerSettingsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerSettingsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1244,6 +1364,15 @@
 			buildConfigurations = (
 				0A983B25267762BA00251912 /* Debug */,
 				0A983B26267762BA00251912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AAFD1BA2677885700F53F8C /* Build configuration list for PBXNativeTarget "SwiftProcessesManagerSettingsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAFD1BB2677885700F53F8C /* Debug */,
+				0AAFD1BC2677885700F53F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
