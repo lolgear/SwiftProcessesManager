@@ -15,23 +15,50 @@ extension ProcessesViewController {
         // Dirty hacks.
         private var subscription: AnyCancellable?
         private var preferencesSubscription: AnyCancellable?
+        private var timeSubscription: AnyCancellable?
         private var didReceiveUpdatesSubject: PassthroughSubject<Void, Never> = .init()
         public var didReceiveUpdatesPublisher: AnyPublisher<Void, Never> {
             self.didReceiveUpdatesSubject.eraseToAnyPublisher()
         }
         
         private let preferencesObserver: PreferencesObserver = .init()
+        private let timeObserver: TimeObserver = .init()
+        private var oldModel: ProcessesModel = .mock()
         private var model: ProcessesModel = .mock()
         private let serviceConnector: ServiceConnector = .init()
+        
+        private var selectedItem: ProcessesModel.Process?
         init() {
             self.setup()
         }
     }
 }
 
+// MARK: - Selection
+extension ProcessesViewController.ViewModel {
+    func preserveItem(at: IndexPath) {
+        guard self.model.items.indices.contains(at.item) else {
+            return
+        }
+        
+        let item = self.oldModel.items[at.item]
+        self.selectedItem = item
+    }
+    func preservedItemIndex() -> Int? {
+        guard let item = self.selectedItem else {
+            return nil
+        }
+        
+        return self.model.items.firstIndex(where: {
+            $0.id == item.id && $0.name == item.name && $0.owner == item.owner
+        })
+    }
+}
+
 // MARK: - Updates
 extension ProcessesViewController.ViewModel {
     func didReceiveUpdatesHandler(model: ProcessesModel) {
+        self.oldModel = self.model
         self.model = self.filter(model: model)
         self.didReceiveUpdatesSubject.send()
     }
@@ -43,6 +70,7 @@ extension ProcessesViewController.ViewModel {
 // MARK: - Filtering
 extension ProcessesViewController.ViewModel {
     func filter(model: ProcessesModel) -> ProcessesModel {
+        
         if self.preferencesObserver.settings.shouldDisplayOnlyMyOwnProcesses {
             return .init(model.items.filter({$0.owner == "dmitry"}))
         }
@@ -58,6 +86,7 @@ extension ProcessesViewController.ViewModel {
         self.configureSubscriptions()
         self.preferencesObserver.retrieveSettings()
         self.preferencesObserver.startObserving()
+        self.timeObserver.configure()
     }
 }
 
@@ -70,6 +99,10 @@ extension ProcessesViewController.ViewModel {
         
         self.preferencesSubscription = self.preferencesObserver.didReceiveUpdates.sink(receiveValue: { [weak self] value in
             self?.didReceiveUpdatesHandler()
+        })
+        
+        self.timeSubscription = self.timeObserver.didReceiveUpdates.sink(receiveValue: { [weak self] value in
+            self?.askUpdates()
         })
     }
 }

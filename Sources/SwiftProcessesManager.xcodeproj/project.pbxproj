@@ -69,6 +69,7 @@
 		0A983B3026776FDD00251912 /* SwiftProcessesManagerPreferencePane.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B2E26776FDD00251912 /* SwiftProcessesManagerPreferencePane.h */; };
 		0A983B3126776FDD00251912 /* SwiftProcessesManagerPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B2F26776FDD00251912 /* SwiftProcessesManagerPreferencePane.m */; };
 		0A983B332677718700251912 /* PreferencesObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B322677718700251912 /* PreferencesObserver.swift */; };
+		0A983B4926777E7B00251912 /* TimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B4826777E7B00251912 /* TimeObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,7 @@
 		0A983B2E26776FDD00251912 /* SwiftProcessesManagerPreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftProcessesManagerPreferencePane.h; sourceTree = "<group>"; };
 		0A983B2F26776FDD00251912 /* SwiftProcessesManagerPreferencePane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftProcessesManagerPreferencePane.m; sourceTree = "<group>"; };
 		0A983B322677718700251912 /* PreferencesObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesObserver.swift; sourceTree = "<group>"; };
+		0A983B4826777E7B00251912 /* TimeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +318,7 @@
 				0A983A98267526B900251912 /* ProcessTableViewCell.xib */,
 				0A983B05267742F600251912 /* AuthorizationService.swift */,
 				0A983B322677718700251912 /* PreferencesObserver.swift */,
+				0A983B4826777E7B00251912 /* TimeObserver.swift */,
 				0A983AFD26769BD900251912 /* NewAuthorizationService.h */,
 				0A983AFE26769BD900251912 /* NewAuthorizationService.m */,
 				0A983AFC26769BD900251912 /* SwiftProcessesManager-Bridging-Header.h */,
@@ -666,6 +669,7 @@
 			files = (
 				0A983B06267742F600251912 /* AuthorizationService.swift in Sources */,
 				0A983A342674D19700251912 /* ProcessCollectionViewItem.swift in Sources */,
+				0A983B4926777E7B00251912 /* TimeObserver.swift in Sources */,
 				0A983A262674D0F200251912 /* ViewController.swift in Sources */,
 				0A983A752674FA7700251912 /* ServiceConnector.swift in Sources */,
 				0A983A3A2674D43100251912 /* ProcessesModel.swift in Sources */,

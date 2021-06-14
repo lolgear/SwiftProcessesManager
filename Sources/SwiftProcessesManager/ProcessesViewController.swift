@@ -87,7 +87,16 @@ class ProcessesViewController: NSViewController {
         self.reloadCollectionView()
     }
     func reloadCollectionView() {
+        /// keep item.
+        if let indexPath = self.collectionView.selectionIndexPaths.first {
+            self.model.preserveItem(at: indexPath)
+        }
+        
         self.collectionView.reloadData()
+        /// and select it.
+        if let item = self.model.preservedItemIndex() {
+            self.collectionView.selectItems(at: [.init(item: item, section: 0)], scrollPosition: .centeredVertically)
+        }
     }
 }
 
