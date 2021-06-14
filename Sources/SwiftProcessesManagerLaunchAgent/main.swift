@@ -18,6 +18,15 @@ class ListenerDelegate: NSObject, NSXPCListenerDelegate {
         
         os_log("Got a connection", log: Logging.logger, type: .info)
         
+        switch ConnectionPolicy.verifyToken.check(newConnection) {
+        case .success(true): break
+        default:
+            os_log("Connection not verified", log: Logging.logger, type: .error)
+            return false
+        }
+        
+        os_log("Connection verified", log: Logging.logger, type: .info)
+        
         newConnection.exportedInterface = NSXPCInterface(with: ProcessServiceProtocol.self)
         let exportedObject = ProcessService()
         newConnection.exportedObject = exportedObject

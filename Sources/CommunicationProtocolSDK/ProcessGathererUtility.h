@@ -20,4 +20,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isProcessRunningWithExecutableName:(NSString *)executableName;
 @end
 
+// WARNING. Exposing internal property.
+@interface NSXPCConnection (AuditToken)
+
+// Apple uses this property internally to verify XPC connections.
+// There is no safe pulicly available alternative (check by client pid, for example, is racy)
+@property (nonatomic, readonly) audit_token_t auditToken;
+
+@end
+
 NS_ASSUME_NONNULL_END
