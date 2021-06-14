@@ -270,7 +270,6 @@
 		0A983A222674D0F200251912 /* SwiftProcessesManager */ = {
 			isa = PBXGroup;
 			children = (
-				0A983B05267742F600251912 /* AuthorizationService.swift */,
 				0A983A232674D0F200251912 /* AppDelegate.swift */,
 				0A983A272674D0F300251912 /* Assets.xcassets */,
 				0A983A2C2674D0F300251912 /* Info.plist */,
@@ -285,6 +284,7 @@
 				0A983A2D2674D0F300251912 /* SwiftProcessesManager.entitlements */,
 				0A983A252674D0F200251912 /* ViewController.swift */,
 				0A983A98267526B900251912 /* ProcessTableViewCell.xib */,
+				0A983B05267742F600251912 /* AuthorizationService.swift */,
 				0A983AFD26769BD900251912 /* NewAuthorizationService.h */,
 				0A983AFE26769BD900251912 /* NewAuthorizationService.m */,
 				0A983AFC26769BD900251912 /* SwiftProcessesManager-Bridging-Header.h */,

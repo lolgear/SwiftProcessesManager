@@ -10,6 +10,7 @@ import CommunicationProtocolSDK
 import Combine
 
 class ServiceConnector {
+    private var authorizationService: AuthorizationService = .init()
     private var service: RemoteProxyHolder<ProcessServiceProtocol>?
     private var monitor: ProcessMonitor = .init()
     private let serviceKind: ServiceKind = .privilegedHelper
@@ -36,7 +37,7 @@ extension ServiceConnector {
 extension ServiceConnector {
     func authorize() -> Bool {
         if self.serviceKind == .privilegedHelper {
-            return AuthorizationService.authorize(label: CommunicationProtocol.LaunchAgent.name)
+            return self.authorizationService.authorize(label: CommunicationProtocol.LaunchAgent.name)
         }
         return true
     }
