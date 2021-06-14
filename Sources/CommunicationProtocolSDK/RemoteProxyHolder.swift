@@ -22,11 +22,11 @@ public struct RemoteProxyHolder<Protocol> {
     
     public func remoteProxyObject(sync: Bool = false) -> Protocol? {
         if sync {
-            return value.remoteObjectProxyWithErrorHandler { error in
+            return value.synchronousRemoteObjectProxyWithErrorHandler { error in
                 print("\(#function) error: \(error)")
             } as? Protocol
         }
-        return value.synchronousRemoteObjectProxyWithErrorHandler { error in
+        return value.remoteObjectProxyWithErrorHandler { error in
             print("\(#function) error: \(error)")
         } as? Protocol
     }
