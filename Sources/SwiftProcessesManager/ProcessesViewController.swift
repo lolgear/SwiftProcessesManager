@@ -78,12 +78,8 @@ class ProcessesViewController: NSViewController {
         self.subscription = self.model.didReceiveUpdatesPublisher.receive(on: DispatchQueue.main).sink { [weak self] _ in
             self?.reload()
         }
-        let result = AuthorizationService.authorize(label: CommunicationProtocol.LaunchAgent.name)
-        
-        if result {
-            self.model.configureConnection()
-            self.model.askUpdates()
-        }
+        self.model.configureConnection()
+        self.model.askUpdates()
     }
     
     // MARK: - Reload
