@@ -12,19 +12,42 @@ import Combine
 class ServiceConnector {
     private var service: RemoteProxyHolder<ProcessServiceProtocol>?
     private var monitor: ProcessMonitor = .init()
+    private let serviceKind: ServiceKind = .privilegedHelper
     public var updatesPublisher: AnyPublisher<ProcessesModel, Never> {
         self.monitor.updatesPublisher().map(ProcessesModel.ProcessesConverter.asProcessesModel).eraseToAnyPublisher()
     }
 }
 
+// MARK: - ServiceKind
+extension ServiceConnector {
+    enum ServiceKind {
+        case xpc
+        case privilegedHelper
+        var createConnection: NSXPCConnection {
+            switch self {
+            case .xpc: return .init(serviceName: CommunicationProtocol.EmbeddedXPC.name)
+            case .privilegedHelper: return .init(machServiceName: CommunicationProtocol.LaunchAgent.name, options: .privileged)
+            }
+        }
+    }
+}
+
 // MARK: - Start/Stop
 extension ServiceConnector {
+    func authorize() -> Bool {
+        if self.serviceKind == .privilegedHelper {
+            return AuthorizationService.authorize(label: CommunicationProtocol.LaunchAgent.name)
+        }
+        return true
+    }
     func start() {
         self.stop()
-        let connection: NSXPCConnection = .init(machServiceName: CommunicationProtocol.LaunchAgent.name, options: .privileged)
-        connection.remoteObjectInterface = .init(with: ProcessServiceProtocol.self)
-        connection.resume()
-        self.service = .init(value: connection, sync: false)
+        if self.authorize() {
+            let connection: NSXPCConnection = self.serviceKind.createConnection
+            connection.remoteObjectInterface = .init(with: ProcessServiceProtocol.self)
+            connection.resume()
+            self.service = .init(value: connection, sync: false)
+        }
     }
     func stop() {
         self.service?.value.invalidate()
