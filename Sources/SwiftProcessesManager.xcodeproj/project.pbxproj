@@ -35,8 +35,6 @@
 		0A983A8D2675191C00251912 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A8C2675191C00251912 /* main.m */; };
 		0A983A97267519AE00251912 /* CommunicationProtocolSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */; };
 		0A983A99267526B900251912 /* ProcessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983A98267526B900251912 /* ProcessTableViewCell.xib */; };
-		0A983AB026754C0700251912 /* SwiftProcessesManagerPreferencePane.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983AAF26754C0700251912 /* SwiftProcessesManagerPreferencePane.h */; };
-		0A983AB226754C0700251912 /* SwiftProcessesManagerPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983AB126754C0700251912 /* SwiftProcessesManagerPreferencePane.m */; };
 		0A983AB426754C0700251912 /* SwiftProcessesManagerPreferencePane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AB326754C0700251912 /* SwiftProcessesManagerPreferencePane.tiff */; };
 		0A983AB726754C0700251912 /* SwiftProcessesManagerPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AB526754C0700251912 /* SwiftProcessesManagerPreferencePane.xib */; };
 		0A983ABF26755C5300251912 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A983ABE26755C5300251912 /* Media.xcassets */; };
@@ -63,6 +61,14 @@
 		0A983B102677526C00251912 /* AuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B0E2677526C00251912 /* AuthorizationTools.m */; };
 		0A983B11267752B100251912 /* AuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B0E2677526C00251912 /* AuthorizationTools.m */; };
 		0A983B132677571300251912 /* AuthorizationTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B122677571300251912 /* AuthorizationTools.h */; };
+		0A983B1F267762BA00251912 /* ProcessessManagerSettingsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B1D267762BA00251912 /* ProcessessManagerSettingsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A983B22267762BA00251912 /* ProcessessManagerSettingsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */; };
+		0A983B23267762BA00251912 /* ProcessessManagerSettingsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A983B28267762CC00251912 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B27267762CC00251912 /* Settings.swift */; };
+		0A983B292677635E00251912 /* ProcessessManagerSettingsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */; };
+		0A983B3026776FDD00251912 /* SwiftProcessesManagerPreferencePane.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B2E26776FDD00251912 /* SwiftProcessesManagerPreferencePane.h */; };
+		0A983B3126776FDD00251912 /* SwiftProcessesManagerPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B2F26776FDD00251912 /* SwiftProcessesManagerPreferencePane.m */; };
+		0A983B332677718700251912 /* PreferencesObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B322677718700251912 /* PreferencesObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,13 @@
 			remoteGlobalIDString = 0A983A9F267542B700251912;
 			remoteInfo = SwiftProcessesManagerLaunchAgent;
 		};
+		0A983B20267762BA00251912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A983A182674D0F200251912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A983B1A267762BA00251912;
+			remoteInfo = ProcessessManagerSettingsSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,6 +109,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0A983B23267762BA00251912 /* ProcessessManagerSettingsSDK.framework in Embed Frameworks */,
 				0A983A622674EAA200251912 /* CommunicationProtocolSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -178,8 +192,6 @@
 		0A983A98267526B900251912 /* ProcessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProcessTableViewCell.xib; sourceTree = "<group>"; };
 		0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = org.opensource.SwiftProcessesManagerLaunchAgent; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A983AAD26754C0700251912 /* SwiftProcessesManagerPreferencePane.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftProcessesManagerPreferencePane.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A983AAF26754C0700251912 /* SwiftProcessesManagerPreferencePane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftProcessesManagerPreferencePane.h; sourceTree = "<group>"; };
-		0A983AB126754C0700251912 /* SwiftProcessesManagerPreferencePane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftProcessesManagerPreferencePane.m; sourceTree = "<group>"; };
 		0A983AB326754C0700251912 /* SwiftProcessesManagerPreferencePane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SwiftProcessesManagerPreferencePane.tiff; sourceTree = "<group>"; };
 		0A983AB626754C0700251912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SwiftProcessesManagerPreferencePane.xib; sourceTree = "<group>"; };
 		0A983AB826754C0700251912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,6 +211,13 @@
 		0A983B0D2677526C00251912 /* AuthorizationTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationTools.h; sourceTree = "<group>"; };
 		0A983B0E2677526C00251912 /* AuthorizationTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizationTools.m; sourceTree = "<group>"; };
 		0A983B122677571300251912 /* AuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationTools.h; sourceTree = "<group>"; };
+		0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProcessessManagerSettingsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A983B1D267762BA00251912 /* ProcessessManagerSettingsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessessManagerSettingsSDK.h; sourceTree = "<group>"; };
+		0A983B1E267762BA00251912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A983B27267762CC00251912 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0A983B2E26776FDD00251912 /* SwiftProcessesManagerPreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftProcessesManagerPreferencePane.h; sourceTree = "<group>"; };
+		0A983B2F26776FDD00251912 /* SwiftProcessesManagerPreferencePane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftProcessesManagerPreferencePane.m; sourceTree = "<group>"; };
+		0A983B322677718700251912 /* PreferencesObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A983B22267762BA00251912 /* ProcessessManagerSettingsSDK.framework in Frameworks */,
 				0A983A612674EAA200251912 /* CommunicationProtocolSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +256,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A983B292677635E00251912 /* ProcessessManagerSettingsSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A983B18267762BA00251912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +278,7 @@
 				0A983A872675191C00251912 /* SwiftProcessesManagerXPCService */,
 				0A983AA1267542B700251912 /* SwiftProcessesManagerLaunchAgent */,
 				0A983AAE26754C0700251912 /* SwiftProcessesManagerPreferencePane */,
+				0A983B1C267762BA00251912 /* ProcessessManagerSettingsSDK */,
 				0A983A212674D0F200251912 /* Products */,
 				0A983A96267519AE00251912 /* Frameworks */,
 			);
@@ -263,6 +292,7 @@
 				0A983A862675191C00251912 /* SwiftProcessesManagerXPCService.xpc */,
 				0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */,
 				0A983AAD26754C0700251912 /* SwiftProcessesManagerPreferencePane.prefPane */,
+				0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +315,7 @@
 				0A983A252674D0F200251912 /* ViewController.swift */,
 				0A983A98267526B900251912 /* ProcessTableViewCell.xib */,
 				0A983B05267742F600251912 /* AuthorizationService.swift */,
+				0A983B322677718700251912 /* PreferencesObserver.swift */,
 				0A983AFD26769BD900251912 /* NewAuthorizationService.h */,
 				0A983AFE26769BD900251912 /* NewAuthorizationService.m */,
 				0A983AFC26769BD900251912 /* SwiftProcessesManager-Bridging-Header.h */,
@@ -348,8 +379,8 @@
 		0A983AAE26754C0700251912 /* SwiftProcessesManagerPreferencePane */ = {
 			isa = PBXGroup;
 			children = (
-				0A983AAF26754C0700251912 /* SwiftProcessesManagerPreferencePane.h */,
-				0A983AB126754C0700251912 /* SwiftProcessesManagerPreferencePane.m */,
+				0A983B2E26776FDD00251912 /* SwiftProcessesManagerPreferencePane.h */,
+				0A983B2F26776FDD00251912 /* SwiftProcessesManagerPreferencePane.m */,
 				0A983AB326754C0700251912 /* SwiftProcessesManagerPreferencePane.tiff */,
 				0A983AB526754C0700251912 /* SwiftProcessesManagerPreferencePane.xib */,
 				0A983AB826754C0700251912 /* Info.plist */,
@@ -357,6 +388,16 @@
 				0A983AC02675F71D00251912 /* InfoPlist.strings */,
 			);
 			path = SwiftProcessesManagerPreferencePane;
+			sourceTree = "<group>";
+		};
+		0A983B1C267762BA00251912 /* ProcessessManagerSettingsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0A983B1D267762BA00251912 /* ProcessessManagerSettingsSDK.h */,
+				0A983B1E267762BA00251912 /* Info.plist */,
+				0A983B27267762CC00251912 /* Settings.swift */,
+			);
+			path = ProcessessManagerSettingsSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,7 +417,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A983AB026754C0700251912 /* SwiftProcessesManagerPreferencePane.h in Headers */,
+				0A983B3026776FDD00251912 /* SwiftProcessesManagerPreferencePane.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +428,14 @@
 				0A983AEC2676891700251912 /* BridgingHeader.h in Headers */,
 				0A983B132677571300251912 /* AuthorizationTools.h in Headers */,
 				0A983AFB26768C1300251912 /* ProcessGathererUtility.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A983B16267762BA00251912 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A983B1F267762BA00251912 /* ProcessessManagerSettingsSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +459,7 @@
 				0A983ACF2676769700251912 /* PBXTargetDependency */,
 				0A983A602674EAA200251912 /* PBXTargetDependency */,
 				0A983A902675191C00251912 /* PBXTargetDependency */,
+				0A983B21267762BA00251912 /* PBXTargetDependency */,
 			);
 			name = SwiftProcessesManager;
 			productName = SwiftProcessesManager;
@@ -488,6 +538,24 @@
 			productReference = 0A983AAD26754C0700251912 /* SwiftProcessesManagerPreferencePane.prefPane */;
 			productType = "com.apple.product-type.bundle";
 		};
+		0A983B1A267762BA00251912 /* ProcessessManagerSettingsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A983B24267762BA00251912 /* Build configuration list for PBXNativeTarget "ProcessessManagerSettingsSDK" */;
+			buildPhases = (
+				0A983B16267762BA00251912 /* Headers */,
+				0A983B17267762BA00251912 /* Sources */,
+				0A983B18267762BA00251912 /* Frameworks */,
+				0A983B19267762BA00251912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProcessessManagerSettingsSDK;
+			productName = ProcessessManagerSettingsSDK;
+			productReference = 0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -515,6 +583,10 @@
 					0A983AAC26754C0700251912 = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					0A983B1A267762BA00251912 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
 				};
 			};
 			buildConfigurationList = 0A983A1B2674D0F200251912 /* Build configuration list for PBXProject "SwiftProcessesManager" */;
@@ -535,6 +607,7 @@
 				0A983A852675191C00251912 /* SwiftProcessesManagerXPCService */,
 				0A983A9F267542B700251912 /* SwiftProcessesManagerLaunchAgent */,
 				0A983AAC26754C0700251912 /* SwiftProcessesManagerPreferencePane */,
+				0A983B1A267762BA00251912 /* ProcessessManagerSettingsSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -577,6 +650,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A983B19267762BA00251912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -592,6 +672,7 @@
 				0A983A362674D24B00251912 /* ProcessesViewController.swift in Sources */,
 				0A983A242674D0F200251912 /* AppDelegate.swift in Sources */,
 				0A983AFF26769BD900251912 /* NewAuthorizationService.m in Sources */,
+				0A983B332677718700251912 /* PreferencesObserver.swift in Sources */,
 				0A983A3C2674D61E00251912 /* ProcessesViewController+ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,7 +728,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A983AB226754C0700251912 /* SwiftProcessesManagerPreferencePane.m in Sources */,
+				0A983B3126776FDD00251912 /* SwiftProcessesManagerPreferencePane.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A983B17267762BA00251912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A983B28267762CC00251912 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +757,11 @@
 			isa = PBXTargetDependency;
 			target = 0A983A9F267542B700251912 /* SwiftProcessesManagerLaunchAgent */;
 			targetProxy = 0A983ACE2676769700251912 /* PBXContainerItemProxy */;
+		};
+		0A983B21267762BA00251912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A983B1A267762BA00251912 /* ProcessessManagerSettingsSDK */;
+			targetProxy = 0A983B20267762BA00251912 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1027,6 +1121,63 @@
 			};
 			name = Release;
 		};
+		0A983B25267762BA00251912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 942QBE43P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ProcessessManagerSettingsSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.ProcessessManagerSettingsSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A983B26267762BA00251912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 942QBE43P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ProcessessManagerSettingsSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.ProcessessManagerSettingsSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1080,6 +1231,15 @@
 			buildConfigurations = (
 				0A983ABA26754C0700251912 /* Debug */,
 				0A983ABB26754C0700251912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A983B24267762BA00251912 /* Build configuration list for PBXNativeTarget "ProcessessManagerSettingsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A983B25267762BA00251912 /* Debug */,
+				0A983B26267762BA00251912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
