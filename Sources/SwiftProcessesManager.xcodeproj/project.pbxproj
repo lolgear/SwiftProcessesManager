@@ -57,6 +57,12 @@
 		0A983AFF26769BD900251912 /* NewAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983AFE26769BD900251912 /* NewAuthorizationService.m */; };
 		0A983B04267742BD00251912 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B03267742BD00251912 /* main.swift */; };
 		0A983B06267742F600251912 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B05267742F600251912 /* AuthorizationService.swift */; };
+		0A983B082677477400251912 /* EasySecureProcessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B072677477400251912 /* EasySecureProcessService.swift */; };
+		0A983B0A2677477F00251912 /* EasySecureProcessMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B092677477F00251912 /* EasySecureProcessMonitor.swift */; };
+		0A983B0F2677526C00251912 /* AuthorizationTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B0D2677526C00251912 /* AuthorizationTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A983B102677526C00251912 /* AuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B0E2677526C00251912 /* AuthorizationTools.m */; };
+		0A983B11267752B100251912 /* AuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B0E2677526C00251912 /* AuthorizationTools.m */; };
+		0A983B132677571300251912 /* AuthorizationTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B122677571300251912 /* AuthorizationTools.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +194,11 @@
 		0A983AFE26769BD900251912 /* NewAuthorizationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewAuthorizationService.m; sourceTree = "<group>"; };
 		0A983B03267742BD00251912 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0A983B05267742F600251912 /* AuthorizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		0A983B072677477400251912 /* EasySecureProcessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySecureProcessService.swift; sourceTree = "<group>"; };
+		0A983B092677477F00251912 /* EasySecureProcessMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySecureProcessMonitor.swift; sourceTree = "<group>"; };
+		0A983B0D2677526C00251912 /* AuthorizationTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationTools.h; sourceTree = "<group>"; };
+		0A983B0E2677526C00251912 /* AuthorizationTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizationTools.m; sourceTree = "<group>"; };
+		0A983B122677571300251912 /* AuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationTools.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +308,10 @@
 				0A983A6C2674EC6F00251912 /* ProcessService.swift */,
 				0A983A662674EAB100251912 /* Protocols.swift */,
 				0A983A782674FCBC00251912 /* RemoteProxyHolder.swift */,
+				0A983B072677477400251912 /* EasySecureProcessService.swift */,
+				0A983B092677477F00251912 /* EasySecureProcessMonitor.swift */,
+				0A983B0D2677526C00251912 /* AuthorizationTools.h */,
+				0A983B0E2677526C00251912 /* AuthorizationTools.m */,
 			);
 			path = CommunicationProtocolSDK;
 			sourceTree = "<group>";
@@ -320,6 +335,7 @@
 		0A983AA1267542B700251912 /* SwiftProcessesManagerLaunchAgent */ = {
 			isa = PBXGroup;
 			children = (
+				0A983B122677571300251912 /* AuthorizationTools.h */,
 				0A983B03267742BD00251912 /* main.swift */,
 				0A983AFA26768C1300251912 /* ProcessGathererUtility.h */,
 				0A983AEB2676891700251912 /* BridgingHeader.h */,
@@ -351,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A983A5E2674EAA200251912 /* CommunicationProtocolSDK.h in Headers */,
+				0A983B0F2677526C00251912 /* AuthorizationTools.h in Headers */,
 				0A983A7E2675159900251912 /* ProcessGathererUtility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A983AEC2676891700251912 /* BridgingHeader.h in Headers */,
+				0A983B132677571300251912 /* AuthorizationTools.h in Headers */,
 				0A983AFB26768C1300251912 /* ProcessGathererUtility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,8 +604,11 @@
 				0A983A672674EAB100251912 /* Protocols.swift in Sources */,
 				0A983A6B2674EC6100251912 /* ProcessHitman.swift in Sources */,
 				0A983A692674EBC200251912 /* Process.swift in Sources */,
+				0A983B082677477400251912 /* EasySecureProcessService.swift in Sources */,
+				0A983B0A2677477F00251912 /* EasySecureProcessMonitor.swift in Sources */,
 				0A983A7F2675159C00251912 /* ProcessGathererUtility.m in Sources */,
 				0A983A792674FCBC00251912 /* RemoteProxyHolder.swift in Sources */,
+				0A983B102677526C00251912 /* AuthorizationTools.m in Sources */,
 				0A983A6D2674EC6F00251912 /* ProcessService.swift in Sources */,
 				0A983A712674F42500251912 /* ProcessGatherer.swift in Sources */,
 				0A983A772674FAB500251912 /* CommunicationProtocol.swift in Sources */,
@@ -612,6 +633,7 @@
 				0A983ADD2676874E00251912 /* ProcessService.swift in Sources */,
 				0A983ADF2676874E00251912 /* RemoteProxyHolder.swift in Sources */,
 				0A983AE22676874E00251912 /* ProcessGatherer.swift in Sources */,
+				0A983B11267752B100251912 /* AuthorizationTools.m in Sources */,
 				0A983ADE2676874E00251912 /* CommunicationProtocol.swift in Sources */,
 				0A983ADC2676874E00251912 /* ProcessHitman.swift in Sources */,
 				0A983B04267742BD00251912 /* main.swift in Sources */,

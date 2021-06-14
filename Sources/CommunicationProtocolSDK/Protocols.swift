@@ -19,3 +19,16 @@ import Foundation
 @objc public protocol ProcessMonitoringProtocol {
     func receiveUpdates(_ updates: ProcessList)
 }
+
+/// (XPC) Service Protocol.
+@objc public protocol EasySecureProcessServiceProtocol {
+    func secureAttach(authorization: NSData, on endpoint: NSXPCListenerEndpoint)
+    func secureKill(authorization: NSData, process: Int, reply: @escaping (NSError?) -> ())
+    func secureAskUpdates(authorization: NSData)
+    func secureAskUpdates(authorization: NSData, reply: @escaping (ProcessList) -> ())
+}
+
+/// App protocol.
+@objc public protocol EasySecureProcessMonitoringProtocol {
+    func secureReceiveUpdates(authorization: NSData, updates: ProcessList)
+}

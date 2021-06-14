@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char CommunicationProtocolSDKVersionString[];
 
 // TODO: Rewrite it.
 #import <CommunicationProtocolSDK/ProcessGathererUtility.h>
+#import <CommunicationProtocolSDK/AuthorizationTools.h>
