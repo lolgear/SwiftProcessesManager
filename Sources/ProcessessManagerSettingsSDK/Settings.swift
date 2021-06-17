@@ -30,6 +30,9 @@ public extension SettingsScope {
 }
 
 ///  For ObjectiveC
-public let Settings_Names_ShouldDisplayOnlyMyOwnProcesses: String = SettingsScope.Names.shouldDisplayOnlyMyOwnProcesses
-public let Settings_Names_Domain: String = SettingsScope.domain
-public let Settings_Notifications_PreferencesDidChange: String = SettingsScope.Notifications.preferencesDidChange
+@objcMembers
+public class SettingsObjectiveC : NSObject {
+    @objc public static var Names_ShouldDisplayOnlyMyOwnProcesses: String = SettingsScope.Names.shouldDisplayOnlyMyOwnProcesses
+    @objc public static var Names_Domain: String = SettingsScope.domain
+    @objc public static var Notifications_PreferencesDidChange: String = SettingsScope.Notifications.preferencesDidChange
+}
