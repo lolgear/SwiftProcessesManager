@@ -8,12 +8,12 @@
 import Foundation
 
 enum ProcessHitman {
-    enum Signals {
+    private enum Signals {
         static let kill: Int32 = Darwin.SIGKILL
     }
     
     static func kill(processId: Int) -> Int32 {
         let pid: pid_t = .init(processId)
-        return Darwin.killpg(pid, Signals.kill)        
+        return Darwin.kill(pid, Signals.kill)
     }
 }
