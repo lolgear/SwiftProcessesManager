@@ -26,6 +26,8 @@ extension ProcessesModel {
     }
 }
 
+extension ProcessesModel.Process: Hashable {}
+
 extension ProcessesModel {
     static func mock() -> Self {
         .init([

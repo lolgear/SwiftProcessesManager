@@ -34,6 +34,16 @@ extension ProcessesViewController {
     }
 }
 
+// MARK: - Collection Diffing
+extension ProcessesViewController.ViewModel {
+    private func calculateDifference() -> CollectionDifference<ProcessesModel.Process> {
+        self.model.items.difference(from: self.oldModel.items)
+    }
+    func shouldUpdateCollection() -> Bool {
+        !self.calculateDifference().isEmpty
+    }
+}
+
 // MARK: - Selection
 extension ProcessesViewController.ViewModel {
     func preserveItem(at: IndexPath) {

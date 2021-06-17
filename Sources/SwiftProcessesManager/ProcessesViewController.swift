@@ -84,7 +84,10 @@ class ProcessesViewController: NSViewController {
     
     // MARK: - Reload
     @objc func reload() {
-        self.reloadCollectionView()
+        /// Ask if we need an update.
+        if self.model.shouldUpdateCollection() {
+            self.reloadCollectionView()
+        }
     }
     func reloadCollectionView() {
         /// keep item.
@@ -93,6 +96,7 @@ class ProcessesViewController: NSViewController {
         }
         
         self.collectionView.reloadData()
+        
         /// and select it.
         if let item = self.model.preservedItemIndex() {
             self.collectionView.selectItems(at: [.init(item: item, section: 0)], scrollPosition: .centeredVertically)
