@@ -9,6 +9,7 @@ import Foundation
 import Combine
 
 class TimeObserver {
+    private let timeInterval: TimeInterval = 5.0
     private var timer: Timer?
     private var didReceiveUpdatesSubject: PassthroughSubject<Void, Never> = .init()
     public var didReceiveUpdates: AnyPublisher<Void, Never> {
@@ -16,7 +17,7 @@ class TimeObserver {
     }
 
     func configure() {
-        self.timer = .scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] value in
+        self.timer = .scheduledTimer(withTimeInterval: self.timeInterval, repeats: true, block: { [weak self] value in
             self?.didReceiveUpdatesSubject.send()
         })
     }
