@@ -7,6 +7,7 @@
 
 import Foundation
 import Darwin
+import CommunicationProtocolUtilities
 
 enum ProcessGatherer {
     struct Parameters {

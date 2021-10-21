@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import CommunicationProtocolUtilities
+
 public class EasySecureProcessService: NSObject {
     private var remoteProxyHolder: RemoteProxyHolder<EasySecureProcessMonitoringProtocol>?
     private var remoteObjectProxy: EasySecureProcessMonitoringProtocol? {

@@ -8,6 +8,7 @@
 import Foundation
 import ServiceManagement
 import CommunicationProtocolSDK
+import CommunicationProtocolUtilities
 
 /// The purpose of this service is simple.
 /// Authorized a launch service with a given mach name.
@@ -44,7 +45,7 @@ class AuthorizationService {
 //        let rights = AuthorizationRights.init(count: 1, items: pointer)
         
         var auth: AuthorizationRef?
-        let status: OSStatus = AuthorizationCreate(nil, nil, [.preAuthorize, .interactionAllowed], &auth)
+        let status: OSStatus = AuthorizationCreate(nil, nil, [.interactionAllowed], &auth)
         if status != errAuthorizationSuccess {
             print("[SMJBS]: Authorization failed with status code \(status)")
             return nil

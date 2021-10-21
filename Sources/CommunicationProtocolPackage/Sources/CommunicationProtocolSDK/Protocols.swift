@@ -13,6 +13,7 @@ import Foundation
     func kill(process: Int, reply: @escaping (NSError?) -> ())
     func askUpdates() // Will call receiveUpdates on attached remoteObjectProxy.
     func askUpdates(reply: @escaping (ProcessList) -> ()) // Without monitor
+    func obtainAuthorization(reply: @escaping (Data) -> ())
 }
 
 /// App protocol.

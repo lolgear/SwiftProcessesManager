@@ -7,6 +7,7 @@
 
 import Foundation
 import CommunicationProtocolSDK
+import CommunicationProtocolUtilities
 import Combine
 
 class ServiceConnector {
@@ -53,6 +54,21 @@ extension ServiceConnector {
     func stop() {
         self.service?.value.invalidate()
         self.service = nil
+    }
+}
+
+// MARK: - Obtain Authorization
+extension ServiceConnector {
+    func obtainAuthorization() {
+        self.service?.remoteProxyObject()?.obtainAuthorization(reply: { data in
+            if data.isEmpty {
+                print("data is empty!")
+            }
+            else {
+                let ref = AuthorizationTools.authorization(fromExternalData: data)
+                print("object: %@", String(describing: ref))
+            }
+        })
     }
 }
 

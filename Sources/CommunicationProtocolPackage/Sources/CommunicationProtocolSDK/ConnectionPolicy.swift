@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ConnectionPolicy {
+public enum ConnectionPolicy {
     case `noPolicy`
     case `verifyToken`
     private static func checkToken(for connection: NSXPCConnection) -> Bool {
@@ -43,7 +43,7 @@ enum ConnectionPolicy {
         return status == errSecSuccess
     }
 
-    func check(_ connection: NSXPCConnection) -> Result<Bool, Error> {
+    public func check(_ connection: NSXPCConnection) -> Result<Bool, Error> {
         switch self {
         case .noPolicy: return .success(true)
         case .verifyToken:

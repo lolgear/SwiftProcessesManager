@@ -113,8 +113,9 @@ extension ProcessesViewController {
         }
     }
     @IBAction func reconnectButtonClicked(sender: NSToolbarItem) {
-        self.model.configureConnection()
-        self.model.askUpdates()
+//        self.model.configureConnection()
+//        self.model.askUpdates()
+        self.model.obtainAuthorization()
     }
 }
 

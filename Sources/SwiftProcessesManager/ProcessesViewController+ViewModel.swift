@@ -136,6 +136,13 @@ extension ProcessesViewController.ViewModel {
     }
 }
 
+// MARK: - Obtain Authorization
+extension ProcessesViewController.ViewModel {
+    func obtainAuthorization() {
+        self.serviceConnector.obtainAuthorization()
+    }
+}
+
 // MARK: - Collection
 extension ProcessesViewController.ViewModel {
     func countOfSections() -> Int {

@@ -7,7 +7,7 @@
 
 import Foundation
 import os
-//import CommunicationProtocolSDK
+import CommunicationProtocolSDK
 
 enum Logging {
     static let logger: OSLog = .init(subsystem: "org.opensource.SwiftProcessesManagerLaunchAgent", category: "my_example")

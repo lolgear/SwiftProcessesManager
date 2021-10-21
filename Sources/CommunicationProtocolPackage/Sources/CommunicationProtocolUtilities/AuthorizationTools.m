@@ -7,6 +7,22 @@
 
 #import "AuthorizationTools.h"
 
+@interface AuthorizationHolder ()
+@property (assign, nonatomic, readwrite) AuthorizationRef ref;
+@end
+
+@implementation AuthorizationHolder
+- (instancetype)initWithRef:(AuthorizationRef)ref {
+    if (self = [super init]) {
+        self.ref = ref;
+    }
+    return self;
+}
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%@", [AuthorizationTools externalDataFromAuthorization:self.ref]];
+}
+@end
+
 @implementation AuthorizationTools
 + (NSData *)externalDataFromAuthorization:(AuthorizationRef)authorization {
     AuthorizationExternalForm externalForm;
@@ -17,6 +33,20 @@
     }
     
     return nil;
+}
+
++ (AuthorizationHolder *)authorizationFromExternalData:(NSData *)data {
+    if (data == nil || data.length != sizeof(AuthorizationExternalForm)) {
+        NSLog(@"data is invalid: %@", data);
+        return nil;
+    }
+    AuthorizationRef ref = NULL;
+    __auto_type status = AuthorizationCreateFromExternalForm([data bytes], &ref);
+    if (status != errAuthorizationSuccess) {
+        NSLog(@"Error while getting authorization from external form: %d", status);
+        return nil;
+    }
+    return [[AuthorizationHolder alloc] initWithRef:ref];
 }
 @end
 

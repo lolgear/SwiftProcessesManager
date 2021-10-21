@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,50 +17,16 @@
 		0A983A3C2674D61E00251912 /* ProcessesViewController+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A3B2674D61E00251912 /* ProcessesViewController+ViewModel.swift */; };
 		0A983A3E2674DD7400251912 /* ProcessCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983A3D2674DD7400251912 /* ProcessCollectionViewItem.xib */; };
 		0A983A422674E5FB00251912 /* ProcessesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983A412674E5FB00251912 /* ProcessesViewController.xib */; };
-		0A983A5E2674EAA200251912 /* CommunicationProtocolSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983A5C2674EAA200251912 /* CommunicationProtocolSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A983A612674EAA200251912 /* CommunicationProtocolSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */; };
-		0A983A622674EAA200251912 /* CommunicationProtocolSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0A983A672674EAB100251912 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A662674EAB100251912 /* Protocols.swift */; };
-		0A983A692674EBC200251912 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A682674EBC200251912 /* Process.swift */; };
-		0A983A6B2674EC6100251912 /* ProcessHitman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6A2674EC6100251912 /* ProcessHitman.swift */; };
-		0A983A6D2674EC6F00251912 /* ProcessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6C2674EC6F00251912 /* ProcessService.swift */; };
-		0A983A6F2674ED2400251912 /* ConnectionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6E2674ED2400251912 /* ConnectionPolicy.swift */; };
-		0A983A712674F42500251912 /* ProcessGatherer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A702674F42500251912 /* ProcessGatherer.swift */; };
-		0A983A732674F85600251912 /* ProcessMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A722674F85600251912 /* ProcessMonitor.swift */; };
 		0A983A752674FA7700251912 /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A742674FA7700251912 /* ServiceConnector.swift */; };
-		0A983A772674FAB500251912 /* CommunicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A762674FAB500251912 /* CommunicationProtocol.swift */; };
-		0A983A792674FCBC00251912 /* RemoteProxyHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A782674FCBC00251912 /* RemoteProxyHolder.swift */; };
-		0A983A7E2675159900251912 /* ProcessGathererUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983A7A26750D0B00251912 /* ProcessGathererUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A983A7F2675159C00251912 /* ProcessGathererUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A7B26750D0B00251912 /* ProcessGathererUtility.m */; };
 		0A983A8D2675191C00251912 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A8C2675191C00251912 /* main.m */; };
-		0A983A97267519AE00251912 /* CommunicationProtocolSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */; };
 		0A983A99267526B900251912 /* ProcessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983A98267526B900251912 /* ProcessTableViewCell.xib */; };
 		0A983AB426754C0700251912 /* SwiftProcessesManagerPreferencePane.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AB326754C0700251912 /* SwiftProcessesManagerPreferencePane.tiff */; };
 		0A983AB726754C0700251912 /* SwiftProcessesManagerPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AB526754C0700251912 /* SwiftProcessesManagerPreferencePane.xib */; };
 		0A983ABF26755C5300251912 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A983ABE26755C5300251912 /* Media.xcassets */; };
 		0A983AC12675F71D00251912 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A983AC02675F71D00251912 /* InfoPlist.strings */; };
 		0A983ACD2676768B00251912 /* org.opensource.SwiftProcessesManagerLaunchAgent in Embed LaunchAgents */ = {isa = PBXBuildFile; fileRef = 0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		0A983ADA2676874E00251912 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A682674EBC200251912 /* Process.swift */; };
-		0A983ADB2676874E00251912 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A662674EAB100251912 /* Protocols.swift */; };
-		0A983ADC2676874E00251912 /* ProcessHitman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6A2674EC6100251912 /* ProcessHitman.swift */; };
-		0A983ADD2676874E00251912 /* ProcessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6C2674EC6F00251912 /* ProcessService.swift */; };
-		0A983ADE2676874E00251912 /* CommunicationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A762674FAB500251912 /* CommunicationProtocol.swift */; };
-		0A983ADF2676874E00251912 /* RemoteProxyHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A782674FCBC00251912 /* RemoteProxyHolder.swift */; };
-		0A983AE02676874E00251912 /* ProcessMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A722674F85600251912 /* ProcessMonitor.swift */; };
-		0A983AE12676874E00251912 /* ConnectionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A6E2674ED2400251912 /* ConnectionPolicy.swift */; };
-		0A983AE22676874E00251912 /* ProcessGatherer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A702674F42500251912 /* ProcessGatherer.swift */; };
-		0A983AE32676875700251912 /* ProcessGathererUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983A7B26750D0B00251912 /* ProcessGathererUtility.m */; };
-		0A983AEC2676891700251912 /* BridgingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983AEB2676891700251912 /* BridgingHeader.h */; };
-		0A983AFB26768C1300251912 /* ProcessGathererUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983AFA26768C1300251912 /* ProcessGathererUtility.h */; };
-		0A983AFF26769BD900251912 /* NewAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983AFE26769BD900251912 /* NewAuthorizationService.m */; };
 		0A983B04267742BD00251912 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B03267742BD00251912 /* main.swift */; };
 		0A983B06267742F600251912 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B05267742F600251912 /* AuthorizationService.swift */; };
-		0A983B082677477400251912 /* EasySecureProcessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B072677477400251912 /* EasySecureProcessService.swift */; };
-		0A983B0A2677477F00251912 /* EasySecureProcessMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B092677477F00251912 /* EasySecureProcessMonitor.swift */; };
-		0A983B0F2677526C00251912 /* AuthorizationTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B0D2677526C00251912 /* AuthorizationTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A983B102677526C00251912 /* AuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B0E2677526C00251912 /* AuthorizationTools.m */; };
-		0A983B11267752B100251912 /* AuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A983B0E2677526C00251912 /* AuthorizationTools.m */; };
-		0A983B132677571300251912 /* AuthorizationTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B122677571300251912 /* AuthorizationTools.h */; };
 		0A983B1F267762BA00251912 /* ProcessessManagerSettingsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A983B1D267762BA00251912 /* ProcessessManagerSettingsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A983B22267762BA00251912 /* ProcessessManagerSettingsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */; };
 		0A983B23267762BA00251912 /* ProcessessManagerSettingsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -74,16 +40,12 @@
 		0AAFD1B22677885600F53F8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAFD1B12677885600F53F8C /* ViewController.swift */; };
 		0AAFD1B42677885700F53F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAFD1B32677885700F53F8C /* Assets.xcassets */; };
 		0AAFD1B72677885700F53F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AAFD1B52677885700F53F8C /* Main.storyboard */; };
+		0AF250B02721F73000281F5C /* CommunicationProtocolSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF250AF2721F73000281F5C /* CommunicationProtocolSDK */; };
+		0AF250B22721F73500281F5C /* CommunicationProtocolSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF250B12721F73500281F5C /* CommunicationProtocolSDK */; };
+		0AF250B42721F73B00281F5C /* CommunicationProtocolSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF250B32721F73B00281F5C /* CommunicationProtocolSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A983A5F2674EAA200251912 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A983A182674D0F200251912 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A983A592674EAA200251912;
-			remoteInfo = CommunicationProtocolSDK;
-		};
 		0A983A8F2675191C00251912 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A983A182674D0F200251912 /* Project object */;
@@ -115,7 +77,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0A983B23267762BA00251912 /* ProcessessManagerSettingsSDK.framework in Embed Frameworks */,
-				0A983A622674EAA200251912 /* CommunicationProtocolSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,21 +137,7 @@
 		0A983A3B2674D61E00251912 /* ProcessesViewController+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessesViewController+ViewModel.swift"; sourceTree = "<group>"; };
 		0A983A3D2674DD7400251912 /* ProcessCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProcessCollectionViewItem.xib; sourceTree = "<group>"; };
 		0A983A412674E5FB00251912 /* ProcessesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProcessesViewController.xib; sourceTree = "<group>"; };
-		0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommunicationProtocolSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A983A5C2674EAA200251912 /* CommunicationProtocolSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationProtocolSDK.h; sourceTree = "<group>"; };
-		0A983A5D2674EAA200251912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A983A662674EAB100251912 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		0A983A682674EBC200251912 /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
-		0A983A6A2674EC6100251912 /* ProcessHitman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessHitman.swift; sourceTree = "<group>"; };
-		0A983A6C2674EC6F00251912 /* ProcessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessService.swift; sourceTree = "<group>"; };
-		0A983A6E2674ED2400251912 /* ConnectionPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionPolicy.swift; sourceTree = "<group>"; };
-		0A983A702674F42500251912 /* ProcessGatherer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessGatherer.swift; sourceTree = "<group>"; };
-		0A983A722674F85600251912 /* ProcessMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessMonitor.swift; sourceTree = "<group>"; };
 		0A983A742674FA7700251912 /* ServiceConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
-		0A983A762674FAB500251912 /* CommunicationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationProtocol.swift; sourceTree = "<group>"; };
-		0A983A782674FCBC00251912 /* RemoteProxyHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProxyHolder.swift; sourceTree = "<group>"; };
-		0A983A7A26750D0B00251912 /* ProcessGathererUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessGathererUtility.h; sourceTree = "<group>"; };
-		0A983A7B26750D0B00251912 /* ProcessGathererUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessGathererUtility.m; sourceTree = "<group>"; };
 		0A983A862675191C00251912 /* SwiftProcessesManagerXPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = SwiftProcessesManagerXPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A983A8C2675191C00251912 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A983A8E2675191C00251912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -204,18 +151,8 @@
 		0A983AC02675F71D00251912 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		0A983AC52676707300251912 /* Helper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Info.plist"; sourceTree = "<group>"; };
 		0A983AC62676707300251912 /* Helper-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Helper-Launchd.plist"; sourceTree = "<group>"; };
-		0A983AEB2676891700251912 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		0A983AFA26768C1300251912 /* ProcessGathererUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessGathererUtility.h; sourceTree = "<group>"; };
-		0A983AFC26769BD900251912 /* SwiftProcessesManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftProcessesManager-Bridging-Header.h"; sourceTree = "<group>"; };
-		0A983AFD26769BD900251912 /* NewAuthorizationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewAuthorizationService.h; sourceTree = "<group>"; };
-		0A983AFE26769BD900251912 /* NewAuthorizationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewAuthorizationService.m; sourceTree = "<group>"; };
 		0A983B03267742BD00251912 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0A983B05267742F600251912 /* AuthorizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
-		0A983B072677477400251912 /* EasySecureProcessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySecureProcessService.swift; sourceTree = "<group>"; };
-		0A983B092677477F00251912 /* EasySecureProcessMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySecureProcessMonitor.swift; sourceTree = "<group>"; };
-		0A983B0D2677526C00251912 /* AuthorizationTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationTools.h; sourceTree = "<group>"; };
-		0A983B0E2677526C00251912 /* AuthorizationTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizationTools.m; sourceTree = "<group>"; };
-		0A983B122677571300251912 /* AuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationTools.h; sourceTree = "<group>"; };
 		0A983B1B267762BA00251912 /* ProcessessManagerSettingsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProcessessManagerSettingsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A983B1D267762BA00251912 /* ProcessessManagerSettingsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessessManagerSettingsSDK.h; sourceTree = "<group>"; };
 		0A983B1E267762BA00251912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -231,6 +168,7 @@
 		0AAFD1B62677885700F53F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AAFD1B82677885700F53F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AAFD1B92677885700F53F8C /* SwiftProcessesManagerSettingsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftProcessesManagerSettingsApp.entitlements; sourceTree = "<group>"; };
+		0AF250AE2721F72900281F5C /* CommunicationProtocolPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CommunicationProtocolPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,15 +176,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF250B02721F73000281F5C /* CommunicationProtocolSDK in Frameworks */,
 				0A983B22267762BA00251912 /* ProcessessManagerSettingsSDK.framework in Frameworks */,
-				0A983A612674EAA200251912 /* CommunicationProtocolSDK.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A983A572674EAA200251912 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A983A97267519AE00251912 /* CommunicationProtocolSDK.framework in Frameworks */,
+				0AF250B22721F73500281F5C /* CommunicationProtocolSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF250B42721F73B00281F5C /* CommunicationProtocolSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +225,8 @@
 		0A983A172674D0F200251912 = {
 			isa = PBXGroup;
 			children = (
+				0AF250AE2721F72900281F5C /* CommunicationProtocolPackage */,
 				0A983A222674D0F200251912 /* SwiftProcessesManager */,
-				0A983A5B2674EAA200251912 /* CommunicationProtocolSDK */,
 				0A983A872675191C00251912 /* SwiftProcessesManagerXPCService */,
 				0A983AA1267542B700251912 /* SwiftProcessesManagerLaunchAgent */,
 				0A983AAE26754C0700251912 /* SwiftProcessesManagerPreferencePane */,
@@ -309,7 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				0A983A202674D0F200251912 /* SwiftProcessesManager.app */,
-				0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */,
 				0A983A862675191C00251912 /* SwiftProcessesManagerXPCService.xpc */,
 				0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */,
 				0A983AAD26754C0700251912 /* SwiftProcessesManagerPreferencePane.prefPane */,
@@ -339,35 +270,8 @@
 				0A983B05267742F600251912 /* AuthorizationService.swift */,
 				0A983B322677718700251912 /* PreferencesObserver.swift */,
 				0A983B4826777E7B00251912 /* TimeObserver.swift */,
-				0A983AFD26769BD900251912 /* NewAuthorizationService.h */,
-				0A983AFE26769BD900251912 /* NewAuthorizationService.m */,
-				0A983AFC26769BD900251912 /* SwiftProcessesManager-Bridging-Header.h */,
 			);
 			path = SwiftProcessesManager;
-			sourceTree = "<group>";
-		};
-		0A983A5B2674EAA200251912 /* CommunicationProtocolSDK */ = {
-			isa = PBXGroup;
-			children = (
-				0A983A762674FAB500251912 /* CommunicationProtocol.swift */,
-				0A983A5C2674EAA200251912 /* CommunicationProtocolSDK.h */,
-				0A983A6E2674ED2400251912 /* ConnectionPolicy.swift */,
-				0A983A5D2674EAA200251912 /* Info.plist */,
-				0A983A682674EBC200251912 /* Process.swift */,
-				0A983A702674F42500251912 /* ProcessGatherer.swift */,
-				0A983A7A26750D0B00251912 /* ProcessGathererUtility.h */,
-				0A983A7B26750D0B00251912 /* ProcessGathererUtility.m */,
-				0A983A6A2674EC6100251912 /* ProcessHitman.swift */,
-				0A983A722674F85600251912 /* ProcessMonitor.swift */,
-				0A983A6C2674EC6F00251912 /* ProcessService.swift */,
-				0A983A662674EAB100251912 /* Protocols.swift */,
-				0A983A782674FCBC00251912 /* RemoteProxyHolder.swift */,
-				0A983B072677477400251912 /* EasySecureProcessService.swift */,
-				0A983B092677477F00251912 /* EasySecureProcessMonitor.swift */,
-				0A983B0D2677526C00251912 /* AuthorizationTools.h */,
-				0A983B0E2677526C00251912 /* AuthorizationTools.m */,
-			);
-			path = CommunicationProtocolSDK;
 			sourceTree = "<group>";
 		};
 		0A983A872675191C00251912 /* SwiftProcessesManagerXPCService */ = {
@@ -389,10 +293,7 @@
 		0A983AA1267542B700251912 /* SwiftProcessesManagerLaunchAgent */ = {
 			isa = PBXGroup;
 			children = (
-				0A983B122677571300251912 /* AuthorizationTools.h */,
 				0A983B03267742BD00251912 /* main.swift */,
-				0A983AFA26768C1300251912 /* ProcessGathererUtility.h */,
-				0A983AEB2676891700251912 /* BridgingHeader.h */,
 				0A983AC52676707300251912 /* Helper-Info.plist */,
 				0A983AC62676707300251912 /* Helper-Launchd.plist */,
 			);
@@ -439,16 +340,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0A983A552674EAA200251912 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A983A5E2674EAA200251912 /* CommunicationProtocolSDK.h in Headers */,
-				0A983B0F2677526C00251912 /* AuthorizationTools.h in Headers */,
-				0A983A7E2675159900251912 /* ProcessGathererUtility.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0A983AA826754C0700251912 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,9 +352,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A983AEC2676891700251912 /* BridgingHeader.h in Headers */,
-				0A983B132677571300251912 /* AuthorizationTools.h in Headers */,
-				0A983AFB26768C1300251912 /* ProcessGathererUtility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,32 +381,16 @@
 			);
 			dependencies = (
 				0A983ACF2676769700251912 /* PBXTargetDependency */,
-				0A983A602674EAA200251912 /* PBXTargetDependency */,
 				0A983A902675191C00251912 /* PBXTargetDependency */,
 				0A983B21267762BA00251912 /* PBXTargetDependency */,
 			);
 			name = SwiftProcessesManager;
+			packageProductDependencies = (
+				0AF250AF2721F73000281F5C /* CommunicationProtocolSDK */,
+			);
 			productName = SwiftProcessesManager;
 			productReference = 0A983A202674D0F200251912 /* SwiftProcessesManager.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0A983A592674EAA200251912 /* CommunicationProtocolSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A983A632674EAA200251912 /* Build configuration list for PBXNativeTarget "CommunicationProtocolSDK" */;
-			buildPhases = (
-				0A983A552674EAA200251912 /* Headers */,
-				0A983A562674EAA200251912 /* Sources */,
-				0A983A572674EAA200251912 /* Frameworks */,
-				0A983A582674EAA200251912 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CommunicationProtocolSDK;
-			productName = CommunicationProtocolSDK;
-			productReference = 0A983A5A2674EAA200251912 /* CommunicationProtocolSDK.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		0A983A852675191C00251912 /* SwiftProcessesManagerXPCService */ = {
 			isa = PBXNativeTarget;
@@ -533,6 +405,9 @@
 			dependencies = (
 			);
 			name = SwiftProcessesManagerXPCService;
+			packageProductDependencies = (
+				0AF250B12721F73500281F5C /* CommunicationProtocolSDK */,
+			);
 			productName = SwiftProcessesManagerXPCService;
 			productReference = 0A983A862675191C00251912 /* SwiftProcessesManagerXPCService.xpc */;
 			productType = "com.apple.product-type.xpc-service";
@@ -552,6 +427,9 @@
 			dependencies = (
 			);
 			name = SwiftProcessesManagerLaunchAgent;
+			packageProductDependencies = (
+				0AF250B32721F73B00281F5C /* CommunicationProtocolSDK */,
+			);
 			productName = SwiftProcessesManagerLaunchAgent;
 			productReference = 0A983AA0267542B700251912 /* org.opensource.SwiftProcessesManagerLaunchAgent */;
 			productType = "com.apple.product-type.tool";
@@ -622,10 +500,6 @@
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
 					};
-					0A983A592674EAA200251912 = {
-						CreatedOnToolsVersion = 12.5;
-						LastSwiftMigration = 1250;
-					};
 					0A983A852675191C00251912 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -659,7 +533,6 @@
 			projectRoot = "";
 			targets = (
 				0A983A1F2674D0F200251912 /* SwiftProcessesManager */,
-				0A983A592674EAA200251912 /* CommunicationProtocolSDK */,
 				0A983A852675191C00251912 /* SwiftProcessesManagerXPCService */,
 				0A983A9F267542B700251912 /* SwiftProcessesManagerLaunchAgent */,
 				0A983AAC26754C0700251912 /* SwiftProcessesManagerPreferencePane */,
@@ -679,13 +552,6 @@
 				0A983A282674D0F300251912 /* Assets.xcassets in Resources */,
 				0A983A422674E5FB00251912 /* ProcessesViewController.xib in Resources */,
 				0A983A2B2674D0F300251912 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A983A582674EAA200251912 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,29 +604,8 @@
 				0A983A3A2674D43100251912 /* ProcessesModel.swift in Sources */,
 				0A983A362674D24B00251912 /* ProcessesViewController.swift in Sources */,
 				0A983A242674D0F200251912 /* AppDelegate.swift in Sources */,
-				0A983AFF26769BD900251912 /* NewAuthorizationService.m in Sources */,
 				0A983B332677718700251912 /* PreferencesObserver.swift in Sources */,
 				0A983A3C2674D61E00251912 /* ProcessesViewController+ViewModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A983A562674EAA200251912 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A983A6F2674ED2400251912 /* ConnectionPolicy.swift in Sources */,
-				0A983A672674EAB100251912 /* Protocols.swift in Sources */,
-				0A983A6B2674EC6100251912 /* ProcessHitman.swift in Sources */,
-				0A983A692674EBC200251912 /* Process.swift in Sources */,
-				0A983B082677477400251912 /* EasySecureProcessService.swift in Sources */,
-				0A983B0A2677477F00251912 /* EasySecureProcessMonitor.swift in Sources */,
-				0A983A7F2675159C00251912 /* ProcessGathererUtility.m in Sources */,
-				0A983A792674FCBC00251912 /* RemoteProxyHolder.swift in Sources */,
-				0A983B102677526C00251912 /* AuthorizationTools.m in Sources */,
-				0A983A6D2674EC6F00251912 /* ProcessService.swift in Sources */,
-				0A983A712674F42500251912 /* ProcessGatherer.swift in Sources */,
-				0A983A772674FAB500251912 /* CommunicationProtocol.swift in Sources */,
-				0A983A732674F85600251912 /* ProcessMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,18 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A983ADB2676874E00251912 /* Protocols.swift in Sources */,
-				0A983AE32676875700251912 /* ProcessGathererUtility.m in Sources */,
-				0A983ADD2676874E00251912 /* ProcessService.swift in Sources */,
-				0A983ADF2676874E00251912 /* RemoteProxyHolder.swift in Sources */,
-				0A983AE22676874E00251912 /* ProcessGatherer.swift in Sources */,
-				0A983B11267752B100251912 /* AuthorizationTools.m in Sources */,
-				0A983ADE2676874E00251912 /* CommunicationProtocol.swift in Sources */,
-				0A983ADC2676874E00251912 /* ProcessHitman.swift in Sources */,
 				0A983B04267742BD00251912 /* main.swift in Sources */,
-				0A983AE02676874E00251912 /* ProcessMonitor.swift in Sources */,
-				0A983AE12676874E00251912 /* ConnectionPolicy.swift in Sources */,
-				0A983ADA2676874E00251912 /* Process.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,11 +653,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A983A602674EAA200251912 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A983A592674EAA200251912 /* CommunicationProtocolSDK */;
-			targetProxy = 0A983A5F2674EAA200251912 /* PBXContainerItemProxy */;
-		};
 		0A983A902675191C00251912 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0A983A852675191C00251912 /* SwiftProcessesManagerXPCService */;
@@ -1002,7 +831,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProcessesManager/SwiftProcessesManager-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1026,65 +854,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftProcessesManager/SwiftProcessesManager-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		0A983A642674EAA200251912 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 942QBE43P5;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CommunicationProtocolSDK/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.CommunicationProtocolSDK;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0A983A652674EAA200251912 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 942QBE43P5;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CommunicationProtocolSDK/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.CommunicationProtocolSDK;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1139,7 +909,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerLaunchAgent;
 				PRODUCT_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftProcessesManagerLaunchAgent/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1170,7 +939,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerLaunchAgent;
 				PRODUCT_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftProcessesManagerLaunchAgent/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1323,15 +1091,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A983A632674EAA200251912 /* Build configuration list for PBXNativeTarget "CommunicationProtocolSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A983A642674EAA200251912 /* Debug */,
-				0A983A652674EAA200251912 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		0A983A922675191C00251912 /* Build configuration list for PBXNativeTarget "SwiftProcessesManagerXPCService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1378,6 +1137,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0AF250AF2721F73000281F5C /* CommunicationProtocolSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommunicationProtocolSDK;
+		};
+		0AF250B12721F73500281F5C /* CommunicationProtocolSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommunicationProtocolSDK;
+		};
+		0AF250B32721F73B00281F5C /* CommunicationProtocolSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CommunicationProtocolSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A983A182674D0F200251912 /* Project object */;
 }

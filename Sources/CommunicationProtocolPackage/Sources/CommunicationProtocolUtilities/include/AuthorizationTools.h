@@ -10,8 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface AuthorizationHolder : NSObject
+@property (assign, nonatomic, readonly) AuthorizationRef ref;
+@end
+
 @interface AuthorizationTools : NSObject
 + (nullable NSData *)externalDataFromAuthorization:(AuthorizationRef)authorization;
++ (nullable AuthorizationHolder *)authorizationFromExternalData:(NSData *)data;
 @end
 
 @interface AuthorizationRightsCommands : NSObject

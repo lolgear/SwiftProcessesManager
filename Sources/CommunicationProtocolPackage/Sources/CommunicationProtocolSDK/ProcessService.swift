@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CommunicationProtocolUtilities
 
 public class ProcessService: NSObject {
     private var remoteProxyHolder: RemoteProxyHolder<ProcessMonitoringProtocol>?
@@ -46,6 +47,16 @@ extension ProcessService: ProcessServiceProtocol {
     public func askUpdates(reply: @escaping (ProcessList) -> ()) {
         let processes = self.gatherProcesses()
         reply(processes)
+    }
+    
+    public func obtainAuthorization(reply: @escaping (Data) -> ()) {
+        let reference = NewAuthorizationService.obtainAuthorizationToExecute()
+        if let reference = reference, let data = AuthorizationTools.externalData(fromAuthorization: reference) {
+            reply(data)
+        }
+        else {
+            reply(.init())
+        }
     }
 }
 

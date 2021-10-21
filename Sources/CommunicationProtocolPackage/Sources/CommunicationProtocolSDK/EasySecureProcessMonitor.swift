@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import CommunicationProtocolUtilities
 
 public class EasySecureProcessMonitor {
     private var updatesSubject: PassthroughSubject<ProcessList, Never> = .init()

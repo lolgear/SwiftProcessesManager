@@ -23,7 +23,21 @@
     AuthorizationRef authRef = NULL;
     AuthorizationItem authItem = { kSMRightBlessPrivilegedHelper, 0, NULL, 0 };
     AuthorizationRights authRights = { 1, &authItem };
-    AuthorizationFlags flags = kAuthorizationFlagDefaults | kAuthorizationFlagInteractionAllowed | kAuthorizationFlagPreAuthorize | kAuthorizationFlagExtendRights;
+    AuthorizationFlags flags = kAuthorizationFlagDefaults | kAuthorizationFlagInteractionAllowed | kAuthorizationFlagExtendRights;
+
+    OSStatus status = AuthorizationCreate(&authRights, kAuthorizationEmptyEnvironment, flags, &authRef);
+    if (status != errAuthorizationSuccess) {
+        NSLog(@"Failed to create AuthorizationRef, return code %i", status);
+    }
+
+    return authRef;
+}
+
++ (AuthorizationRef)obtainAuthorizationToExecute {
+    AuthorizationRef authRef = NULL;
+    AuthorizationItem authItem = { kAuthorizationRightExecute, 0, NULL, 0 };
+    AuthorizationRights authRights = { 1, &authItem };
+    AuthorizationFlags flags = kAuthorizationFlagDefaults | kAuthorizationFlagInteractionAllowed | kAuthorizationFlagExtendRights;
 
     OSStatus status = AuthorizationCreate(&authRights, kAuthorizationEmptyEnvironment, flags, &authRef);
     if (status != errAuthorizationSuccess) {
