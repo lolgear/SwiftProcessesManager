@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-import ProcessessManagerSettingsSDK
+import ProcessesManagerSettingsSDK
 
 class ViewController: NSViewController {
     @IBOutlet var button: NSButton!

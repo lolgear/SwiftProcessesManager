@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import ProcessessManagerSettingsSDK
+import ProcessesManagerSettingsSDK
 import Combine
 
 class PreferencesObserver : NSObject {
