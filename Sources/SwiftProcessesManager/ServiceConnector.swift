@@ -18,6 +18,10 @@ class ServiceConnector {
     public var updatesPublisher: AnyPublisher<ProcessesModel, Never> {
         self.monitor.updatesPublisher().map(ProcessesModel.ProcessesConverter.asProcessesModel).eraseToAnyPublisher()
     }
+    private let authorizationLookupSubject: PassthroughSubject<Result<String, Error>, Never> = .init()
+    public var authorizationLookup: AnyPublisher<Result<String, Error>, Never> {
+        authorizationLookupSubject.eraseToAnyPublisher()
+    }
 }
 
 // MARK: - ServiceKind
@@ -59,14 +63,19 @@ extension ServiceConnector {
 
 // MARK: - Obtain Authorization
 extension ServiceConnector {
+    enum TheError: Error {
+        case authRefError
+    }
     func obtainAuthorization() {
         self.service?.remoteProxyObject()?.obtainAuthorization(reply: { data in
             if data.isEmpty {
                 print("data is empty!")
+                self.authorizationLookupSubject.send(.failure(TheError.authRefError))
             }
             else {
                 let ref = AuthorizationTools.authorization(fromExternalData: data)
-                print("object: %@", String(describing: ref))
+                print("object: ", String(describing: ref))
+                self.authorizationLookupSubject.send(.success(String(describing: ref)))
             }
         })
     }

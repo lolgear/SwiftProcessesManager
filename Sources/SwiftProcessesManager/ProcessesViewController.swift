@@ -13,6 +13,7 @@ class ProcessesViewController: NSViewController {
     // MARK: - Outlets
     @IBOutlet private var collectionView: NSCollectionView!
     @IBOutlet private var tableView: NSTableView!
+    private let label: NSTextField = .init(labelWithString: "Waiting for connection")
 
     // MARK: - CollectionView Convenients
     let collectionViewItemIdentifier = NSUserInterfaceItemIdentifier(NSStringFromClass(ProcessCollectionViewItem.self))
@@ -28,7 +29,28 @@ class ProcessesViewController: NSViewController {
         super.viewDidLoad()
         self.setupUIElements()
 //        self.addLayout()
+        self.addLabel()
         self.setupDataSources()
+    }
+    
+    func addLabel() {
+        let view = NSStackView.init()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.alignment = .centerX
+        view.addView(self.label, in: .center)
+        self.view.addSubview(view)
+        self.collectionView.isHidden = true
+        
+        let constraints = [
+            view.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            view.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+        ]
+        
+        constraints.forEach { constraint in
+            constraint.isActive = true
+        }
     }
     
     override func viewDidAppear() {
@@ -75,14 +97,22 @@ class ProcessesViewController: NSViewController {
     
     // MARK: - Data Sources
     func setupDataSources() {
-        self.subscription = self.model.didReceiveUpdatesPublisher.receive(on: DispatchQueue.main).sink { [weak self] _ in
-            self?.reload()
-        }
+//        self.subscription = self.model.didReceiveUpdatesPublisher.receive(on: DispatchQueue.main).sink { [weak self] _ in
+//            self?.reload()
+//        }
+        self.subscription = self.model.authorizationLookup.receive(on: DispatchQueue.main).sink(receiveValue: { [weak self] value in
+            self?.reload(string: String(describing: value))
+        })
         self.model.configureConnection()
-        self.model.askUpdates()
+//        self.model.askUpdates()
     }
     
     // MARK: - Reload
+    
+    func reload(string: String) {
+        self.label.stringValue = string
+    }
+    
     @objc func reload() {
         /// Ask if we need an update.
         if self.model.shouldUpdateCollection() {

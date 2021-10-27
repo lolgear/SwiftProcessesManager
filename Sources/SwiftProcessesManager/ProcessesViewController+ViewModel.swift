@@ -21,6 +21,10 @@ extension ProcessesViewController {
             self.didReceiveUpdatesSubject.eraseToAnyPublisher()
         }
         
+        public var authorizationLookup: AnyPublisher<Result<String, Error>, Never> {
+            self.serviceConnector.authorizationLookup
+        }
+        
         private let preferencesObserver: PreferencesObserver = .init()
         private let timeObserver: TimeObserver = .init()
         private var oldModel: ProcessesModel = .mock()
