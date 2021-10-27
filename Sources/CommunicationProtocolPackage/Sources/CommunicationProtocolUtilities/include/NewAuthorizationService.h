@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NewAuthorizationService : NSObject
-+ (BOOL)authorizeLabel:(NSString *)label;
++ (BOOL)authorizeLabel:(NSString *)label reference:(AuthorizationRef)reference;
++ (nullable AuthorizationRef)obtainAuthorizationForPriviledgedHelper;
++ (nullable AuthorizationRef)obtainDefaultAuthorization;
 + (nullable AuthorizationRef)obtainAuthorizationToExecute;
 @end
 
