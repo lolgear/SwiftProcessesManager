@@ -740,10 +740,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftProcessesManager/SwiftProcessesManager.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 942QBE43P5;
 				INFOPLIST_FILE = SwiftProcessesManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -763,10 +763,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SwiftProcessesManager/SwiftProcessesManager.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 942QBE43P5;
 				INFOPLIST_FILE = SwiftProcessesManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -781,10 +781,10 @@
 		0A983A932675191C00251912 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 942QBE43P5;
 				INFOPLIST_FILE = SwiftProcessesManagerXPCService/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -795,10 +795,10 @@
 		0A983A942675191C00251912 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 942QBE43P5;
 				INFOPLIST_FILE = SwiftProcessesManagerXPCService/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opensource.SwiftProcessesManagerXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -810,9 +810,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 942QBE43P5;
 				INFOPLIST_FILE = "\"$(SRCROOT)/SwiftProcessesManagerLaunchAgent/Helper-Info.plist\"";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -840,9 +840,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 942QBE43P5;
 				INFOPLIST_FILE = "\"$(SRCROOT)/SwiftProcessesManagerLaunchAgent/Helper-Info.plist\"";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
